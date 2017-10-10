@@ -17,13 +17,13 @@ namespace Chapter10_Collection.Collection
         }
         public string Title
         {
-            get => title;
-            private set => title = value;
+            get {return title;} 
+            private set{this.title = value;}
         }
         public string Content
         {
-            get => this.content;
-            private set => this.content = value;
+            get {return this.content;}
+            private set { this.content = value; }
         }
     }
 }

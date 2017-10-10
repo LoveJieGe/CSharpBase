@@ -12,7 +12,10 @@ namespace Chapter10_Collection.Collection
         private DocumentManager documentManager;
         public ProcessDocuments(DocumentManager dm)
         {
-            this.documentManager = dm ?? throw new ArgumentNullException("dm");
+            //this.documentManager = dm ?? throw new ArgumentNullException("dm");
+            if(dm==null)
+                throw new ArgumentNullException("dm");
+            this.documentManager = dm;
         }
         /// <summary>
         /// 任务的启动方法
