@@ -13,7 +13,10 @@ namespace Chapter11_ProCsharp
             //ProCsharp.Linq.LinqProgram.ExtensionMethods();
             //ProCsharp.Linq.LinqProgram.LinqFilter();
             //ProCsharp.Linq.LinqProgram.LinqManyFrom();
-            ProCsharp.Linq.LinqProgram.LinqGroupBy();
+            //ProCsharp.Linq.LinqProgram.LinqGroupBy();
+            //ProCsharp.Linq.LinqProgram.LinqGroupByNested();
+            //ProCsharp.Linq.LinqProgram.LinqJoin();
+            ProCsharp.Linq.LinqProgram.LinqParallel();
             Console.ReadKey();
         }
     }
