@@ -41,9 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProCsharp\Linq\Championship.cs" />
     <Compile Include="ProCsharp\Linq\Formula1.cs" />
     <Compile Include="ProCsharp\Linq\LinqProgram.cs" />
     <Compile Include="ProCsharp\Linq\Racer.cs" />
+    <Compile Include="ProCsharp\Linq\RacerInfo.cs" />
+    <Compile Include="ProCsharp\Linq\StringExtension.cs" />
     <Compile Include="ProCsharp\Linq\Team.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

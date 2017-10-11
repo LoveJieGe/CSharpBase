@@ -81,6 +81,450 @@ namespace Chapter11_ProCsharp.ProCsharp.Linq
                 };
             }
             return teams;
-        } 
+        }
+
+        private static List<Championship> championships;
+        public static IEnumerable<Championship> GetChampionships()
+        {
+            if (championships == null)
+            {
+                championships = new List<Championship>();
+                championships.Add(new Championship
+                {
+                    Year = 1950,
+                    First = "Nino Farina",
+                    Second = "Juan Manuel Fangio",
+                    Third = "Luigi Fagioli"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1951,
+                    First = "Juan Manuel Fangio",
+                    Second = "Alberto Ascari",
+                    Third = "Froilan Gonzalez"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1952,
+                    First = "Alberto Ascari",
+                    Second = "Nino Farina",
+                    Third = "Piero Taruffi"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1953,
+                    First = "Alberto Ascari",
+                    Second = "Juan Manuel Fangio",
+                    Third = "Nino Farina"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1954,
+                    First = "Juan Manuel Fangio",
+                    Second = "Froilan Gonzalez",
+                    Third = "Mike Hawthorn"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1955,
+                    First = "Juan Manuel Fangio",
+                    Second = "Stirling Moss",
+                    Third = "Eugenio Castellotti"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1956,
+                    First = "Juan Manuel Fangio",
+                    Second = "Stirling Moss",
+                    Third = "Peter Collins"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1957,
+                    First = "Juan Manuel Fangio",
+                    Second = "Stirling Moss",
+                    Third = "Luigi Musso"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1958,
+                    First = "Mike Hawthorn",
+                    Second = "Stirling Moss",
+                    Third = "Tony Brooks"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1959,
+                    First = "Jack Brabham",
+                    Second = "Tony Brooks",
+                    Third = "Stirling Moss"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1960,
+                    First = "Jack Brabham",
+                    Second = "Bruce McLaren",
+                    Third = "Stirling Moss"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1961,
+                    First = "Phil Hill",
+                    Second = "Wolfgang von Trips",
+                    Third = "Stirling Moss"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1962,
+                    First = "Graham Hill",
+                    Second = "Jim Clark",
+                    Third = "Bruce McLaren"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1963,
+                    First = "Jim Clark",
+                    Second = "Graham Hill",
+                    Third = "Richie Ginther"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1964,
+                    First = "John Surtees",
+                    Second = "Graham Hill",
+                    Third = "Jim Clark"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1965,
+                    First = "Jim Clark",
+                    Second = "Graham Hill",
+                    Third = "Jackie Stewart"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1966,
+                    First = "Jack Brabham",
+                    Second = "John Surtees",
+                    Third = "Jochen Rindt"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1967,
+                    First = "Dennis Hulme",
+                    Second = "Jack Brabham",
+                    Third = "Jim Clark"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1968,
+                    First = "Graham Hill",
+                    Second = "Jackie Stewart",
+                    Third = "Dennis Hulme"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1969,
+                    First = "Jackie Stewart",
+                    Second = "Jackie Ickx",
+                    Third = "Bruce McLaren"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1970,
+                    First = "Jochen Rindt",
+                    Second = "Jackie Ickx",
+                    Third = "Clay Regazzoni"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1971,
+                    First = "Jackie Stewart",
+                    Second = "Ronnie Peterson",
+                    Third = "Francois Cevert"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1972,
+                    First = "Emerson Fittipaldi",
+                    Second = "Jackie Stewart",
+                    Third = "Dennis Hulme"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1973,
+                    First = "Jackie Stewart",
+                    Second = "Emerson Fittipaldi",
+                    Third = "Ronnie Peterson"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1974,
+                    First = "Emerson Fittipaldi",
+                    Second = "Clay Regazzoni",
+                    Third = "Jody Scheckter"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1975,
+                    First = "Niki Lauda",
+                    Second = "Emerson Fittipaldi",
+                    Third = "Carlos Reutemann"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1976,
+                    First = "James Hunt",
+                    Second = "Niki Lauda",
+                    Third = "Jody Scheckter"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1977,
+                    First = "Niki Lauda",
+                    Second = "Jody Scheckter",
+                    Third = "Mario Andretti"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1978,
+                    First = "Mario Andretti",
+                    Second = "Ronnie Peterson",
+                    Third = "Carlos Reutemann"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1979,
+                    First = "Jody Scheckter",
+                    Second = "Gilles Villeneuve",
+                    Third = "Alan Jones"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1980,
+                    First = "Alan Jones",
+                    Second = "Nelson Piquet",
+                    Third = "Carlos Reutemann"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1981,
+                    First = "Nelson Piquet",
+                    Second = "Carlos Reutemann",
+                    Third = "Alan Jones"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1982,
+                    First = "Keke Rosberg",
+                    Second = "Didier Pironi",
+                    Third = "John Watson"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1983,
+                    First = "Nelson Piquet",
+                    Second = "Alain Prost",
+                    Third = "Rene Arnoux"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1984,
+                    First = "Niki Lauda",
+                    Second = "Alain Prost",
+                    Third = "Elio de Angelis"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1985,
+                    First = "Alain Prost",
+                    Second = "Michele Alboreto",
+                    Third = "Keke Rosberg"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1986,
+                    First = "Alain Prost",
+                    Second = "Nigel Mansell",
+                    Third = "Nelson Piquet"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1987,
+                    First = "Nelson Piquet",
+                    Second = "Nigel Mansell",
+                    Third = "Ayrton Senna"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1988,
+                    First = "Ayrton Senna",
+                    Second = "Alain Prost",
+                    Third = "Gerhard Berger"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1989,
+                    First = "Alain Prost",
+                    Second = "Ayrton Senna",
+                    Third = "Riccardo Patrese"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1990,
+                    First = "Ayrton Senna",
+                    Second = "Alain Prost",
+                    Third = "Nelson Piquet"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1991,
+                    First = "Ayrton Senna",
+                    Second = "Nigel Mansell",
+                    Third = "Riccardo Patrese"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1992,
+                    First = "Nigel Mansell",
+                    Second = "Riccardo Patrese",
+                    Third = "Michael Schumacher"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1993,
+                    First = "Alain Prost",
+                    Second = "Ayrton Senna",
+                    Third = "Damon Hill"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1994,
+                    First = "Michael Schumacher",
+                    Second = "Damon Hill",
+                    Third = "Gerhard Berger"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1995,
+                    First = "Michael Schumacher",
+                    Second = "Damon Hill",
+                    Third = "David Coulthard"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1996,
+                    First = "Damon Hill",
+                    Second = "Jacques Villeneuve",
+                    Third = "Michael Schumacher"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1997,
+                    First = "Jacques Villeneuve",
+                    Second = "Heinz-Harald Frentzen",
+                    Third = "David Coulthard"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1998,
+                    First = "Mika Hakkinen",
+                    Second = "Michael Schumacher",
+                    Third = "David Coulthard"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 1999,
+                    First = "Mika Hakkinen",
+                    Second = "Eddie Irvine",
+                    Third = "Heinz-Harald Frentzen"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2000,
+                    First = "Michael Schumacher",
+                    Second = "Mika Hakkinen",
+                    Third = "David Coulthard"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2001,
+                    First = "Michael Schumacher",
+                    Second = "David Coulthard",
+                    Third = "Rubens Barrichello"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2002,
+                    First = "Michael Schumacher",
+                    Second = "Rubens Barrichello",
+                    Third = "Juan Pablo Montoya"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2003,
+                    First = "Michael Schumacher",
+                    Second = "Kimi Räikkönen",
+                    Third = "Juan Pablo Montoya"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2004,
+                    First = "Michael Schumacher",
+                    Second = "Rubens Barrichello",
+                    Third = "Jenson Button"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2005,
+                    First = "Fernando Alonso",
+                    Second = "Kimi Räikkönen",
+                    Third = "Michael Schumacher"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2006,
+                    First = "Fernando Alonso",
+                    Second = "Michael Schumacher",
+                    Third = "Felipe Massa"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2007,
+                    First = "Kimi Räikkönen",
+                    Second = "Lewis Hamilton",
+                    Third = "Fernando Alonso"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2008,
+                    First = "Lewis Hamilton",
+                    Second = "Felipe Massa",
+                    Third = "Kimi Raikkonen"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2009,
+                    First = "Jenson Button",
+                    Second = "Sebastian Vettel",
+                    Third = "Rubens Barrichello"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2010,
+                    First = "Sebastian Vettel",
+                    Second = "Fernando Alonso",
+                    Third = "Mark Webber"
+                });
+                championships.Add(new Championship
+                {
+                    Year = 2011,
+                    First = "Sebastian Vettel",
+                    Second = "Jenson Button",
+                    Third = "Mark Webber"
+                });
+            }
+            return championships;
+        }
     }
 }
