@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter11_ProCsharp", "Chap
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter13", "Chapter13", "{01A3BD78-76C7-4ED1-B5CC-EA477DDABF2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter3_AsyncLib", "Chapter3_AsyncLib\Chapter3_AsyncLib.csproj", "{89AFD33E-ED2E-48A9-A7D2-2FD4F31739ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter13_AsyncLib", "Chapter3_AsyncLib\Chapter13_AsyncLib.csproj", "{89AFD33E-ED2E-48A9-A7D2-2FD4F31739ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter13_AsyncPatterns", "Chapter13_AsyncPatterns\Chapter13_AsyncPatterns.csproj", "{F6746943-A99C-4D66-B872-EC4CD4B6B471}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,11 +31,16 @@ Global
 		{89AFD33E-ED2E-48A9-A7D2-2FD4F31739ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89AFD33E-ED2E-48A9-A7D2-2FD4F31739ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89AFD33E-ED2E-48A9-A7D2-2FD4F31739ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6746943-A99C-4D66-B872-EC4CD4B6B471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6746943-A99C-4D66-B872-EC4CD4B6B471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6746943-A99C-4D66-B872-EC4CD4B6B471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6746943-A99C-4D66-B872-EC4CD4B6B471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{89AFD33E-ED2E-48A9-A7D2-2FD4F31739ED} = {01A3BD78-76C7-4ED1-B5CC-EA477DDABF2E}
+		{F6746943-A99C-4D66-B872-EC4CD4B6B471} = {01A3BD78-76C7-4ED1-B5CC-EA477DDABF2E}
 	EndGlobalSection
 EndGlobal
