@@ -13,15 +13,36 @@
             </StackPanel.LayoutTransform>
             <TextBox Text="{Binding SearchTerm}" Width="200" Margin="4"></TextBox>
             <Button Click="OnClear">清除</Button>
-            <Button Click="OnSearchSync">同步</Button>
-            <Button Click="OnSearchAsyncPattern">异步</Button>
+            <Button Click="OnSeachSync">同步</Button>
+            <Button Click="OnSeachAsyncPattern">异步</Button>
             <Button Click="OnAsyncEventPattern">异步事件</Button>
-            <Button Click="OnTaskBasedPattern">基于任务的异步</Button>
+            <Button Click="OnTaskBasedAsyncPattern">基于任务的异步</Button>
         </StackPanel>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="3"></ColumnDefinition>
             </Grid.ColumnDefinitions>
+            <ListBox Grid.IsSharedSizeScope="True" ItemsSource="{Binding List}"
+                     Grid.Column="0" IsSynchronizedWithCurrentItem="True" Background="Black">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition SharedSizeGroup="ItemTemplateGroup">
+                                </ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Background="{StaticResource linearBackgroupBrush}">
+                                <TextBlock Text="{Binding Source}" Foreground="White"></TextBlock>
+                                <TextBlock Text="{Binding Title}" Foreground="White"></TextBlock>
+                                <Image HorizontalAlignment="Center" Source="{Binding ThumbnailUrl}" Width="100"></Image>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <GridSplitter Grid.Column="1" Width="3" HorizontalAlignment="Left" />
+            <Image Grid.Column="1" Source="{Binding List/Url}"/>
+
         </Grid>
     </Grid>
 
