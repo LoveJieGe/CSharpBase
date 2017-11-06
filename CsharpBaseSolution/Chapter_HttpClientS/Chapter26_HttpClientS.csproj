@@ -4,13 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{71FC3302-A3D8-4D1A-977A-61F0F7D72AAD}</ProjectGuid>
+    <ProjectGuid>{0DCB23A8-0F91-451A-9EAD-E39067EBF5BA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Chapter21_ParallelSample</RootNamespace>
-    <AssemblyName>Chapter21_ParallelSample</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Chapter_HttpClientS</RootNamespace>
+    <AssemblyName>Chapter_HttpClientS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,7 +43,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThreadProgram.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
