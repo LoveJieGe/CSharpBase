@@ -1,0 +1,19 @@
+﻿<Window x:Class="Chapter27_QuoteClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chapter27_QuoteClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" MinHeight="30"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Margin="3" Width="150" Height="50" FontSize="20" VerticalAlignment="Stretch" Grid.Row="0"  IsEnabled="{Binding EnableRequest}"
+                Click="OnGetQuote" >获取信息
+        </Button>
+        <TextBlock Margin="6" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Quote}"/>
+    </Grid>
+</Window>
