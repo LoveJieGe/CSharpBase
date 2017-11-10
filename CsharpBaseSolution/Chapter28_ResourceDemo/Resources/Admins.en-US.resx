@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="R5013906" xml:space="preserve">
+    <value>Uncontrolled</value>
+  </data>
+  <data name="R5013912" xml:space="preserve">
+    <value>NO.</value>
+  </data>
+  <data name="R5013913" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="R5013915" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="R5013917" xml:space="preserve">
+    <value>Not in turn</value>
+  </data>
+  <data name="R5013918" xml:space="preserve">
+    <value>Already transferred</value>
+  </data>
+  <data name="R5013919" xml:space="preserve">
+    <value>Audited</value>
+  </data>
+  <data name="R5013920" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="R5013921" xml:space="preserve">
+    <value>Numerical</value>
+  </data>
+  <data name="R5013922" xml:space="preserve">
+    <value>Character</value>
+  </data>
+  <data name="R5013923" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="R5013924" xml:space="preserve">
+    <value>Refuse</value>
+  </data>
+  <data name="R5013927" xml:space="preserve">
+    <value>Lock</value>
+  </data>
+  <data name="R5013928" xml:space="preserve">
+    <value>Secrecy</value>
+  </data>
+  <data name="R5013938" xml:space="preserve">
+    <value>Date [{0: yyyy-MM-dd}] where the period is invalid!</value>
+  </data>
+  <data name="R5013969" xml:space="preserve">
+    <value>The period of {0} is not found</value>
+  </data>
+  <data name="R5014015" xml:space="preserve">
+    <value>Doc Num</value>
+  </data>
+  <data name="R5014016" xml:space="preserve">
+    <value>Dept NO.</value>
+  </data>
+  <data name="R5014018" xml:space="preserve">
+    <value>Approval to start</value>
+  </data>
+  <data name="R5014019" xml:space="preserve">
+    <value>Approval to complete</value>
+  </data>
+  <data name="R5014021" xml:space="preserve">
+    <value>Approval draft</value>
+  </data>
+  <data name="R5014023" xml:space="preserve">
+    <value>Creation date</value>
+  </data>
+  <data name="R5014025" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="R5014026" xml:space="preserve">
+    <value>Approval Status</value>
+  </data>
+  <data name="R5014029" xml:space="preserve">
+    <value>Dockey</value>
+  </data>
+  <data name="R5014030" xml:space="preserve">
+    <value>Line NO.</value>
+  </data>
+  <data name="R5014043" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="R5014051" xml:space="preserve">
+    <value>Approving draft {0} has been deleted and can not restore the previous operation.</value>
+  </data>
+  <data name="R5014052" xml:space="preserve">
+    <value>Approval of approval draft {0} has refused!</value>
+  </data>
+  <data name="R5014053" xml:space="preserve">
+    <value>Approving draft {0} has been added as an official approval!</value>
+  </data>
+  <data name="R5014054" xml:space="preserve">
+    <value>Approval of approval draft {0} has been revoked!</value>
+  </data>
+  <data name="R5014055" xml:space="preserve">
+    <value>Approving draft {0} has not yet approved, can not restore the previous operation!</value>
+  </data>
+  <data name="R5014059" xml:space="preserve">
+    <value>Reinstated status successfully!</value>
+  </data>
+  <data name="R5014065" xml:space="preserve">
+    <value>Web-based of Doc</value>
+  </data>
+  <data name="R5014066" xml:space="preserve">
+    <value>Custom Business</value>
+  </data>
+  <data name="R5014067" xml:space="preserve">
+    <value>Integer</value>
+  </data>
+  <data name="R5014068" xml:space="preserve">
+    <value>Integer of autoincrement</value>
+  </data>
+  <data name="R5014069" xml:space="preserve">
+    <value>Numeric</value>
+  </data>
+  <data name="R5014070" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="R5014074" xml:space="preserve">
+    <value>One column</value>
+  </data>
+  <data name="R5014076" xml:space="preserve">
+    <value>Equal</value>
+  </data>
+  <data name="R5014079" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="R5014080" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="R5014081" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="R5014082" xml:space="preserve">
+    <value>Ratio</value>
+  </data>
+  <data name="R5014083" xml:space="preserve">
+    <value>Percentage</value>
+  </data>
+  <data name="R5014084" xml:space="preserve">
+    <value>Amt</value>
+  </data>
+  <data name="R5014085" xml:space="preserve">
+    <value>Date time</value>
+  </data>
+  <data name="R5014086" xml:space="preserve">
+    <value>Multiple lines of text</value>
+  </data>
+  <data name="R5014107" xml:space="preserve">
+    <value>Approval process</value>
+  </data>
+  <data name="R5014133" xml:space="preserve">
+    <value>All-delete and all-add</value>
+  </data>
+  <data name="R5014134" xml:space="preserve">
+    <value>Update Mode</value>
+  </data>
+  <data name="R5014135" xml:space="preserve">
+    <value>Ordinary table</value>
+  </data>
+  <data name="R5014136" xml:space="preserve">
+    <value>Fee table</value>
+  </data>
+  <data name="R5014137" xml:space="preserve">
+    <value>Way of payment received</value>
+  </data>
+  <data name="R5014142" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="R5014155" xml:space="preserve">
+    <value>(Empty)</value>
+  </data>
+  <data name="R5014156" xml:space="preserve">
+    <value>Write-off</value>
+  </data>
+  <data name="R5014157" xml:space="preserve">
+    <value>Doc tag</value>
+  </data>
+  <data name="R5014158" xml:space="preserve">
+    <value>Doc validation</value>
+  </data>
+  <data name="R5014163" xml:space="preserve">
+    <value>Change the owner</value>
+  </data>
+  <data name="R5014164" xml:space="preserve">
+    <value>Change the Doc date</value>
+  </data>
+  <data name="R5014170" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="R5014171" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="R5014172" xml:space="preserve">
+    <value>Recover</value>
+  </data>
+  <data name="R5014174" xml:space="preserve">
+    <value>Unclassified</value>
+  </data>
+  <data name="R5014181" xml:space="preserve">
+    <value>Fine page</value>
+  </data>
+  <data name="R5014194" xml:space="preserve">
+    <value>The Dockey of Table [{0}] is more than 2, multi-Dockey has not been supported by the embedded document.</value>
+  </data>
+  <data name="R5014196" xml:space="preserve">
+    <value>The placement of control [{0}] is not clear.</value>
+  </data>
+  <data name="R5014201" xml:space="preserve">
+    <value>Pay bills by check</value>
+  </data>
+  <data name="R5014203" xml:space="preserve">
+    <value>Cash payment</value>
+  </data>
+  <data name="R5014215" xml:space="preserve">
+    <value>Grouping</value>
+  </data>
+  <data name="R5014217" xml:space="preserve">
+    <value>Proportion</value>
+  </data>
+  <data name="R5014222" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="R5014237" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="R5014238" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="R5014239" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="R5014240" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="R5014241" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="R5014247" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="R5014248" xml:space="preserve">
+    <value>Suppliers</value>
+  </data>
+  <data name="R5014249" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="R5014250" xml:space="preserve">
+    <value>Dept</value>
+  </data>
+  <data name="R5014251" xml:space="preserve">
+    <value>WC.</value>
+  </data>
+  <data name="R5014268" xml:space="preserve">
+    <value>Duplicate Dockey, the Dockey [{0}] already exists!</value>
+  </data>
+  <data name="R5014269" xml:space="preserve">
+    <value>{0} cannot be empty!</value>
+  </data>
+  <data name="R5014276" xml:space="preserve">
+    <value>NO. do not match with the encoding rules!</value>
+  </data>
+  <data name="R5014282" xml:space="preserve">
+    <value>Computing</value>
+  </data>
+  <data name="R5014285" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="R5014289" xml:space="preserve">
+    <value>Start operating</value>
+  </data>
+  <data name="R5014311" xml:space="preserve">
+    <value>Input Parameters</value>
+  </data>
+  <data name="R5014312" xml:space="preserve">
+    <value>System Parameters</value>
+  </data>
+  <data name="R5014313" xml:space="preserve">
+    <value>Fixed value</value>
+  </data>
+  <data name="R5014316" xml:space="preserve">
+    <value>Close Line</value>
+  </data>
+  <data name="R5014317" xml:space="preserve">
+    <value>UnLock</value>
+  </data>
+  <data name="R5014318" xml:space="preserve">
+    <value>Barcode</value>
+  </data>
+  <data name="R5014319" xml:space="preserve">
+    <value>Basic Info</value>
+  </data>
+  <data name="R5014320" xml:space="preserve">
+    <value>Doc Status</value>
+  </data>
+  <data name="R5014334" xml:space="preserve">
+    <value>Restore the database from a backup!</value>
+  </data>
+  <data name="R5014336" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="R5014337" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="R5014339" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="R5014343" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="R5014347" xml:space="preserve">
+    <value>Boolean</value>
+  </data>
+  <data name="R5014361" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="R5014382" xml:space="preserve">
+    <value>Partition</value>
+  </data>
+  <data name="R5014386" xml:space="preserve">
+    <value>Error expressions</value>
+  </data>
+  <data name="R5014389" xml:space="preserve">
+    <value>Please enter the required parameters</value>
+  </data>
+  <data name="R5014406" xml:space="preserve">
+    <value>All users</value>
+  </data>
+  <data name="R5014407" xml:space="preserve">
+    <value>All posts</value>
+  </data>
+  <data name="R5014413" xml:space="preserve">
+    <value>There is no data currently , the data can not be modified</value>
+  </data>
+  <data name="R5014416" xml:space="preserve">
+    <value>Current query program is Non-shared, please choose other options!</value>
+  </data>
+  <data name="R5014420" xml:space="preserve">
+    <value>Data can not be found!</value>
+  </data>
+  <data name="R5014425" xml:space="preserve">
+    <value>There is no data Currently, the data can not be added</value>
+  </data>
+  <data name="R5014431" xml:space="preserve">
+    <value>Custom Query</value>
+  </data>
+  <data name="R5014432" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="R5014433" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="R5014434" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="R5019312" xml:space="preserve">
+    <value>Stage</value>
+  </data>
+</root>
