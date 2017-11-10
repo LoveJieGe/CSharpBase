@@ -1,0 +1,1809 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="R4010024" xml:space="preserve">
+    <value>不允許出現重複的物件類型和憑證性質!</value>
+  </data>
+  <data name="R4010025" xml:space="preserve">
+    <value>不允許出現重複的物件類型!</value>
+  </data>
+  <data name="R4010026" xml:space="preserve">
+    <value>後續憑證清單中不允許出現重複的物件類型和憑證性質!</value>
+  </data>
+  <data name="R4010027" xml:space="preserve">
+    <value>後續憑證清單中不允許出現重複的物件類型!</value>
+  </data>
+  <data name="R4010040" xml:space="preserve">
+    <value>未找到物件號為[{0}]的憑證性質設置內置資料.</value>
+  </data>
+  <data name="R5013892" xml:space="preserve">
+    <value>設置期間為{0}</value>
+  </data>
+  <data name="R5013893" xml:space="preserve">
+    <value>載入物件失敗,請重新選擇!</value>
+  </data>
+  <data name="R5013894" xml:space="preserve">
+    <value>物件授權</value>
+  </data>
+  <data name="R5013895" xml:space="preserve">
+    <value>該憑證性質已被使用,不允許修改限制欄位</value>
+  </data>
+  <data name="R5013896" xml:space="preserve">
+    <value>只能在結算類型為預付沖應付下使用控制預付沖應付</value>
+  </data>
+  <data name="R5013897" xml:space="preserve">
+    <value>增加庫存類</value>
+  </data>
+  <data name="R5013898" xml:space="preserve">
+    <value>減少庫存類</value>
+  </data>
+  <data name="R5013899" xml:space="preserve">
+    <value>影響在訂量</value>
+  </data>
+  <data name="R5013900" xml:space="preserve">
+    <value>影響預約量</value>
+  </data>
+  <data name="R5013901" xml:space="preserve">
+    <value>不影響庫存類</value>
+  </data>
+  <data name="R5013902" xml:space="preserve">
+    <value>入庫類</value>
+  </data>
+  <data name="R5013903" xml:space="preserve">
+    <value>出庫類</value>
+  </data>
+  <data name="R5013904" xml:space="preserve">
+    <value>雙倉庫IO</value>
+  </data>
+  <data name="R5013905" xml:space="preserve">
+    <value>雙倉庫OI</value>
+  </data>
+  <data name="R5013906" xml:space="preserve">
+    <value>不控制</value>
+  </data>
+  <data name="R5013907" xml:space="preserve">
+    <value>有記錄</value>
+  </data>
+  <data name="R5013908" xml:space="preserve">
+    <value>小於等於單據數量</value>
+  </data>
+  <data name="R5013909" xml:space="preserve">
+    <value>等於單據數量</value>
+  </data>
+  <data name="R5013910" xml:space="preserve">
+    <value>縮略圖</value>
+  </data>
+  <data name="R5013911" xml:space="preserve">
+    <value>詳細資訊</value>
+  </data>
+  <data name="R5013912" xml:space="preserve">
+    <value>編號</value>
+  </data>
+  <data name="R5013913" xml:space="preserve">
+    <value>名稱</value>
+  </data>
+  <data name="R5013914" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="R5013915" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="R5013916" xml:space="preserve">
+    <value>路徑</value>
+  </data>
+  <data name="R5013917" xml:space="preserve">
+    <value>未年轉</value>
+  </data>
+  <data name="R5013918" xml:space="preserve">
+    <value>已年轉</value>
+  </data>
+  <data name="R5013919" xml:space="preserve">
+    <value>已審核</value>
+  </data>
+  <data name="R5013920" xml:space="preserve">
+    <value>整數</value>
+  </data>
+  <data name="R5013921" xml:space="preserve">
+    <value>數值</value>
+  </data>
+  <data name="R5013922" xml:space="preserve">
+    <value>字符</value>
+  </data>
+  <data name="R5013923" xml:space="preserve">
+    <value>可用</value>
+  </data>
+  <data name="R5013924" xml:space="preserve">
+    <value>拒絕</value>
+  </data>
+  <data name="R5013925" xml:space="preserve">
+    <value>期間條件</value>
+  </data>
+  <data name="R5013926" xml:space="preserve">
+    <value>日期條件</value>
+  </data>
+  <data name="R5013927" xml:space="preserve">
+    <value>鎖定</value>
+  </data>
+  <data name="R5013928" xml:space="preserve">
+    <value>保密</value>
+  </data>
+  <data name="R5013929" xml:space="preserve">
+    <value>舊資料備份資料庫 連接字串未設置.</value>
+  </data>
+  <data name="R5013930" xml:space="preserve">
+    <value>{0} 已生成資料表, 不可再次創建視圖.</value>
+  </data>
+  <data name="R5013931" xml:space="preserve">
+    <value>表{0}的備份範本不存在.</value>
+  </data>
+  <data name="R5013932" xml:space="preserve">
+    <value>表{0}的備份範本已關閉.</value>
+  </data>
+  <data name="R5013933" xml:space="preserve">
+    <value>資料變更不可逆轉, 請謹慎操作!</value>
+  </data>
+  <data name="R5013934" xml:space="preserve">
+    <value>開始資料變更</value>
+  </data>
+  <data name="R5013935" xml:space="preserve">
+    <value>指定的資料變更不存在.</value>
+  </data>
+  <data name="R5013936" xml:space="preserve">
+    <value>資料變更: {0}({1}); </value>
+  </data>
+  <data name="R5013937" xml:space="preserve">
+    <value>資料變更檢查未通過.</value>
+  </data>
+  <data name="R5013938" xml:space="preserve">
+    <value>日期[{0:yyyy-MM-dd}]所在的期間無效!</value>
+  </data>
+  <data name="R5013939" xml:space="preserve">
+    <value>期間的開始日期不能大於結束日期!</value>
+  </data>
+  <data name="R5013940" xml:space="preserve">
+    <value>期間是本年最後一個月期間,期間結束日期必須等於本年期間結束日期!</value>
+  </data>
+  <data name="R5013941" xml:space="preserve">
+    <value>期間不是本年最後一個月期間,期間結束日期必須小於本年期間結束日期!</value>
+  </data>
+  <data name="R5013942" xml:space="preserve">
+    <value>未設置下年期間,不能新增!</value>
+  </data>
+  <data name="R5013943" xml:space="preserve">
+    <value>期間已關閉, 不能設置是否啟動!</value>
+  </data>
+  <data name="R5013944" xml:space="preserve">
+    <value>選定期間是目前期間, 不能設置是否啟動!</value>
+  </data>
+  <data name="R5013945" xml:space="preserve">
+    <value>選定期間已經庫存和資金結帳,不能設置為啟動!</value>
+  </data>
+  <data name="R5013946" xml:space="preserve">
+    <value>選定期間已經財務結帳,不能設置為啟動!</value>
+  </data>
+  <data name="R5013947" xml:space="preserve">
+    <value>選定期間在途帳本已經結帳,不能設置為啟動!</value>
+  </data>
+  <data name="R5013948" xml:space="preserve">
+    <value>選定期間狀態不符, 不能設置為目前期間!</value>
+  </data>
+  <data name="R5013949" xml:space="preserve">
+    <value>只能刪除最後一個期間!</value>
+  </data>
+  <data name="R5013950" xml:space="preserve">
+    <value>關閉或鎖定的月期間不可刪除!</value>
+  </data>
+  <data name="R5013951" xml:space="preserve">
+    <value>目前期間無法刪除!</value>
+  </data>
+  <data name="R5013952" xml:space="preserve">
+    <value>期間[#{0}]不存在!</value>
+  </data>
+  <data name="R5013953" xml:space="preserve">
+    <value>期間[{0}]已經被刪除!</value>
+  </data>
+  <data name="R5013954" xml:space="preserve">
+    <value>[{0}]期間已經關閉,不能調整日期!</value>
+  </data>
+  <data name="R5013955" xml:space="preserve">
+    <value>[{0}]期間已經被引用,不能調整日期!</value>
+  </data>
+  <data name="R5013956" xml:space="preserve">
+    <value>月期間{0}所在的年期間未找到!</value>
+  </data>
+  <data name="R5013957" xml:space="preserve">
+    <value>調整後的結束日期不能大於年期間的結束日期!</value>
+  </data>
+  <data name="R5013958" xml:space="preserve">
+    <value>選定期間不是最後一個期間, 不能刪除!</value>
+  </data>
+  <data name="R5013959" xml:space="preserve">
+    <value>選定期間已關閉, 不能刪除!</value>
+  </data>
+  <data name="R5013960" xml:space="preserve">
+    <value>年期間[{0}]已經被刪除!</value>
+  </data>
+  <data name="R5013961" xml:space="preserve">
+    <value>[{0}]年期間已經關閉,不能調整日期!</value>
+  </data>
+  <data name="R5013962" xml:space="preserve">
+    <value>[{0}]年期間已經被引用,不能調整日期!</value>
+  </data>
+  <data name="R5013963" xml:space="preserve">
+    <value>無法取消審核{0},該年內已有期間結帳!</value>
+  </data>
+  <data name="R5013964" xml:space="preserve">
+    <value>[{0}]的上期[{1}]未庫存和資金結帳，不能進行[{0}]的庫存及資金結帳!</value>
+  </data>
+  <data name="R5013965" xml:space="preserve">
+    <value>[{0}]已經庫存及資金結帳!</value>
+  </data>
+  <data name="R5013966" xml:space="preserve">
+    <value>期間[{0}]為目前期間,不能進行財務結帳</value>
+  </data>
+  <data name="R5013967" xml:space="preserve">
+    <value>期間[{0}]不是[取消啟動的、取消關閉]狀態,不能庫存和資金以及財務結帳!</value>
+  </data>
+  <data name="R5013968" xml:space="preserve">
+    <value>由於[{0}]的上期間未關閉,不能進行[{0}]的自動關閉!</value>
+  </data>
+  <data name="R5013969" xml:space="preserve">
+    <value>未找到期間{0}</value>
+  </data>
+  <data name="R5013970" xml:space="preserve">
+    <value>[{0}]還沒有庫存結帳,不允許在途帳本結帳!</value>
+  </data>
+  <data name="R5013971" xml:space="preserve">
+    <value>[{0}]已經完成在途帳本結帳!</value>
+  </data>
+  <data name="R5013972" xml:space="preserve">
+    <value>[{0}]的上期[{1}]未進行在途帳本結帳,不能進行[{0}]的在途帳本結帳!</value>
+  </data>
+  <data name="R5013973" xml:space="preserve">
+    <value>期間[{0}]未取消啟動,不能進行在途帳本結帳!</value>
+  </data>
+  <data name="R5013974" xml:space="preserve">
+    <value>[{0}]還沒有庫存結帳,不允許批次結帳!</value>
+  </data>
+  <data name="R5013975" xml:space="preserve">
+    <value>[{0}]已經完成批次結帳!</value>
+  </data>
+  <data name="R5013976" xml:space="preserve">
+    <value>[{0}]的上期[{1}]未進行批次結帳,不能進行[{0}]的批次結帳!</value>
+  </data>
+  <data name="R5013977" xml:space="preserve">
+    <value>[{0}]的上期[{1}]未財務結帳，不能進行[{0}]的財務結帳!</value>
+  </data>
+  <data name="R5013978" xml:space="preserve">
+    <value>[{0}]已經財務結帳!</value>
+  </data>
+  <data name="R5013979" xml:space="preserve">
+    <value>[{0}]不是 取消關閉 的期間，不能取消庫存和資金以及財務結帳!</value>
+  </data>
+  <data name="R5013980" xml:space="preserve">
+    <value>[{0}]的下期[{1}]已庫存和資金結帳，不能進行[{0}]的取消庫存及資金結帳!</value>
+  </data>
+  <data name="R5013981" xml:space="preserve">
+    <value>[{0}]已經取消庫存和資金結帳!</value>
+  </data>
+  <data name="R5013982" xml:space="preserve">
+    <value>[{0}]未進行批次結帳!</value>
+  </data>
+  <data name="R5013983" xml:space="preserve">
+    <value>[{0}]之後的期間[{1}]已經批次結帳,不能進行[{0}]的取消批次結帳!</value>
+  </data>
+  <data name="R5013984" xml:space="preserve">
+    <value>[{0}]未進行在途帳本結帳!</value>
+  </data>
+  <data name="R5013985" xml:space="preserve">
+    <value>[{0}]之後的期間[{1}]已經在途帳本結帳,不能進行[{0}]的取消在途帳本結帳!</value>
+  </data>
+  <data name="R5013986" xml:space="preserve">
+    <value>期間[{0}]是關閉的,不能取消在途帳本結帳!</value>
+  </data>
+  <data name="R5013987" xml:space="preserve">
+    <value>[{0}]的下期[{1}]已財務結帳，不能進行[{0}]的取消財務結帳!</value>
+  </data>
+  <data name="R5013988" xml:space="preserve">
+    <value>[{0}]已經取消財務結帳!</value>
+  </data>
+  <data name="R5013989" xml:space="preserve">
+    <value>[{0}]的上期間[{1}]不是關閉的期間，不能進行[{0}]的關閉操作!</value>
+  </data>
+  <data name="R5013990" xml:space="preserve">
+    <value>[{0}]期間未結束庫存及資金結帳或財務結帳，不能關閉!</value>
+  </data>
+  <data name="R5013991" xml:space="preserve">
+    <value>[{0}]期間是目前期間,不能關閉!</value>
+  </data>
+  <data name="R5013992" xml:space="preserve">
+    <value>[{0}]期間已經關閉!</value>
+  </data>
+  <data name="R5013993" xml:space="preserve">
+    <value>資料已被刪除, 不能執行此操作.</value>
+  </data>
+  <data name="R5013994" xml:space="preserve">
+    <value>自訂業務[{0}]高級設置(Check、引用、功能).</value>
+  </data>
+  <data name="R5013995" xml:space="preserve">
+    <value>圖片控制項的欄位類型應為Nvarchar,長度為50.</value>
+  </data>
+  <data name="R5013996" xml:space="preserve">
+    <value>欄位 DraftKey 類型錯誤,應為int.</value>
+  </data>
+  <data name="R5013997" xml:space="preserve">
+    <value>啟用了建立者, 但欄位不完整.</value>
+  </data>
+  <data name="R5013998" xml:space="preserve">
+    <value>啟用了修改者, 但欄位不完整.</value>
+  </data>
+  <data name="R5013999" xml:space="preserve">
+    <value>啟用了關閉/回復者, 但欄位不完整.</value>
+  </data>
+  <data name="R5014000" xml:space="preserve">
+    <value>啟用了附件, 但欄位不完整.</value>
+  </data>
+  <data name="R5014001" xml:space="preserve">
+    <value>缺少必要的欄位 WddStatus.</value>
+  </data>
+  <data name="R5014002" xml:space="preserve">
+    <value>缺少必要的欄位 DocStatus.</value>
+  </data>
+  <data name="R5014003" xml:space="preserve">
+    <value>缺少必要的欄位 DraftKey.</value>
+  </data>
+  <data name="R5014004" xml:space="preserve">
+    <value>自訂業務[{0}]主表字段設置.</value>
+  </data>
+  <data name="R5014005" xml:space="preserve">
+    <value>自訂業務[{0}]業務主表[{1}]已創建.</value>
+  </data>
+  <data name="R5014006" xml:space="preserve">
+    <value>尚未設置主鍵.</value>
+  </data>
+  <data name="R5014007" xml:space="preserve">
+    <value>自訂業務[{0}]創建業務主表[{1}].</value>
+  </data>
+  <data name="R5014008" xml:space="preserve">
+    <value>已成功導入共計{0}行資料.</value>
+  </data>
+  <data name="R5014009" xml:space="preserve">
+    <value>自訂業務[{0}]創建自訂表格AATblDt[{1}].</value>
+  </data>
+  <data name="R5014010" xml:space="preserve">
+    <value>列[{0}]資料類型[{1}]無法識別.</value>
+  </data>
+  <data name="R5014011" xml:space="preserve">
+    <value>自訂業務[{0}]業務主表[{1}]未建立.</value>
+  </data>
+  <data name="R5014012" xml:space="preserve">
+    <value>自訂業務[{0}]刪除業務主表[{1}].</value>
+  </data>
+  <data name="R5014013" xml:space="preserve">
+    <value>只有欄位[Attachment]才可以使用附件控制項.</value>
+  </data>
+  <data name="R5014014" xml:space="preserve">
+    <value>自訂業務[{0}]主表Winform介面設置.</value>
+  </data>
+  <data name="R5014015" xml:space="preserve">
+    <value>憑證編號</value>
+  </data>
+  <data name="R5014016" xml:space="preserve">
+    <value>部門編碼</value>
+  </data>
+  <data name="R5014017" xml:space="preserve">
+    <value>部門名稱</value>
+  </data>
+  <data name="R5014018" xml:space="preserve">
+    <value>審批開始</value>
+  </data>
+  <data name="R5014019" xml:space="preserve">
+    <value>審批完成</value>
+  </data>
+  <data name="R5014020" xml:space="preserve">
+    <value>制單人</value>
+  </data>
+  <data name="R5014021" xml:space="preserve">
+    <value>審批草稿</value>
+  </data>
+  <data name="R5014022" xml:space="preserve">
+    <value>草稿編號</value>
+  </data>
+  <data name="R5014023" xml:space="preserve">
+    <value>創建日期</value>
+  </data>
+  <data name="R5014024" xml:space="preserve">
+    <value>憑證日期</value>
+  </data>
+  <data name="R5014025" xml:space="preserve">
+    <value>備註</value>
+  </data>
+  <data name="R5014026" xml:space="preserve">
+    <value>審批狀態</value>
+  </data>
+  <data name="R5014027" xml:space="preserve">
+    <value>草稿</value>
+  </data>
+  <data name="R5014028" xml:space="preserve">
+    <value>自訂業務細表[{0}]細表字段設置.</value>
+  </data>
+  <data name="R5014029" xml:space="preserve">
+    <value>主鍵</value>
+  </data>
+  <data name="R5014030" xml:space="preserve">
+    <value>行號</value>
+  </data>
+  <data name="R5014031" xml:space="preserve">
+    <value>自訂業務細表[{0}]資料表[{1}]已創建.</value>
+  </data>
+  <data name="R5014032" xml:space="preserve">
+    <value>自訂業務細表[{0}]創建業務細表[{1}].</value>
+  </data>
+  <data name="R5014033" xml:space="preserve">
+    <value>自訂業務細表[{0}]資料表[{1}]未建立.</value>
+  </data>
+  <data name="R5014034" xml:space="preserve">
+    <value>自訂業務細表[{0}]刪除業務細表[{1}].</value>
+  </data>
+  <data name="R5014035" xml:space="preserve">
+    <value>自訂業務[{0}]細表Winform介面設置.</value>
+  </data>
+  <data name="R5014036" xml:space="preserve">
+    <value>自訂業務[{0}]細表Web介面設置.</value>
+  </data>
+  <data name="R5014037" xml:space="preserve">
+    <value>文字方塊</value>
+  </data>
+  <data name="R5014038" xml:space="preserve">
+    <value>日期框</value>
+  </data>
+  <data name="R5014039" xml:space="preserve">
+    <value>清單查找</value>
+  </data>
+  <data name="R5014040" xml:space="preserve">
+    <value>大文本</value>
+  </data>
+  <data name="R5014041" xml:space="preserve">
+    <value>圖片控制項ID只能以EmbedID開頭.</value>
+  </data>
+  <data name="R5014042" xml:space="preserve">
+    <value>自訂業務[{0}]主表Web介面設置.</value>
+  </data>
+  <data name="R5014043" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="R5014044" xml:space="preserve">
+    <value>自訂業務[{0}]查詢清單參數設置.</value>
+  </data>
+  <data name="R5014045" xml:space="preserve">
+    <value>搜索內容</value>
+  </data>
+  <data name="R5014046" xml:space="preserve">
+    <value>單據Web化[{0}]主表Web流覽介面.</value>
+  </data>
+  <data name="R5014047" xml:space="preserve">
+    <value>單據Web化[{0}]Web表格流覽介面.</value>
+  </data>
+  <data name="R5014048" xml:space="preserve">
+    <value>自訂業務[{0}]新增記錄[{1}]</value>
+  </data>
+  <data name="R5014049" xml:space="preserve">
+    <value>業務狀態已變更,請刷新頁面後操作.</value>
+  </data>
+  <data name="R5014050" xml:space="preserve">
+    <value>自訂業務[{0}]修改記錄[{1}]</value>
+  </data>
+  <data name="R5014051" xml:space="preserve">
+    <value>審批草稿{0}已刪除, 不能恢復先前的操作.</value>
+  </data>
+  <data name="R5014052" xml:space="preserve">
+    <value>審批草稿{0}的審批已拒絕!</value>
+  </data>
+  <data name="R5014053" xml:space="preserve">
+    <value>審批草稿{0}已添加為正式批准!</value>
+  </data>
+  <data name="R5014054" xml:space="preserve">
+    <value>審批草稿{0}已撤銷審批!</value>
+  </data>
+  <data name="R5014055" xml:space="preserve">
+    <value>審批草稿{0}還沒有通過審批, 不能恢復先前的操作!</value>
+  </data>
+  <data name="R5014056" xml:space="preserve">
+    <value>自訂業務[{0}]停用記錄[{1}]</value>
+  </data>
+  <data name="R5014057" xml:space="preserve">
+    <value>成功停用記錄!</value>
+  </data>
+  <data name="R5014058" xml:space="preserve">
+    <value>自訂業務[{0}]恢復記錄[{1}]</value>
+  </data>
+  <data name="R5014059" xml:space="preserve">
+    <value>成功恢復記錄狀態!</value>
+  </data>
+  <data name="R5014060" xml:space="preserve">
+    <value>自訂業務[{0}]刪除記錄[{1}]</value>
+  </data>
+  <data name="R5014061" xml:space="preserve">
+    <value>自訂業務[{0}]記錄[{1}]執行功能[{2}]</value>
+  </data>
+  <data name="R5014062" xml:space="preserve">
+    <value>業務[{0}({1})]已執行[{2}].</value>
+  </data>
+  <data name="R5014063" xml:space="preserve">
+    <value>資料表名稱必須以 ZZ 開頭.</value>
+  </data>
+  <data name="R5014064" xml:space="preserve">
+    <value>資料已關閉或者被刪除, 不能執行此操作.</value>
+  </data>
+  <data name="R5014065" xml:space="preserve">
+    <value>單據Web化</value>
+  </data>
+  <data name="R5014066" xml:space="preserve">
+    <value>自定義業務</value>
+  </data>
+  <data name="R5014067" xml:space="preserve">
+    <value>整型</value>
+  </data>
+  <data name="R5014068" xml:space="preserve">
+    <value>自增整型</value>
+  </data>
+  <data name="R5014069" xml:space="preserve">
+    <value>數值型</value>
+  </data>
+  <data name="R5014070" xml:space="preserve">
+    <value>日期型</value>
+  </data>
+  <data name="R5014071" xml:space="preserve">
+    <value>字元(char)</value>
+  </data>
+  <data name="R5014072" xml:space="preserve">
+    <value>字元(Nvarchar)</value>
+  </data>
+  <data name="R5014073" xml:space="preserve">
+    <value>字元(Ntext)</value>
+  </data>
+  <data name="R5014074" xml:space="preserve">
+    <value>一欄</value>
+  </data>
+  <data name="R5014075" xml:space="preserve">
+    <value>二欄</value>
+  </data>
+  <data name="R5014076" xml:space="preserve">
+    <value>等於</value>
+  </data>
+  <data name="R5014077" xml:space="preserve">
+    <value>前端匹配</value>
+  </data>
+  <data name="R5014078" xml:space="preserve">
+    <value>模糊查找</value>
+  </data>
+  <data name="R5014079" xml:space="preserve">
+    <value>無</value>
+  </data>
+  <data name="R5014080" xml:space="preserve">
+    <value>單價</value>
+  </data>
+  <data name="R5014081" xml:space="preserve">
+    <value>數量</value>
+  </data>
+  <data name="R5014082" xml:space="preserve">
+    <value>比率</value>
+  </data>
+  <data name="R5014083" xml:space="preserve">
+    <value>百分比</value>
+  </data>
+  <data name="R5014084" xml:space="preserve">
+    <value>金額</value>
+  </data>
+  <data name="R5014085" xml:space="preserve">
+    <value>日期時間</value>
+  </data>
+  <data name="R5014086" xml:space="preserve">
+    <value>多行文本</value>
+  </data>
+  <data name="R5014087" xml:space="preserve">
+    <value>T文字方塊</value>
+  </data>
+  <data name="R5014088" xml:space="preserve">
+    <value>L下拉清單</value>
+  </data>
+  <data name="R5014089" xml:space="preserve">
+    <value>P清單查找</value>
+  </data>
+  <data name="R5014090" xml:space="preserve">
+    <value>D日期框</value>
+  </data>
+  <data name="R5014091" xml:space="preserve">
+    <value>N數值框</value>
+  </data>
+  <data name="R5014092" xml:space="preserve">
+    <value>C核取方塊</value>
+  </data>
+  <data name="R5014093" xml:space="preserve">
+    <value>R單選框</value>
+  </data>
+  <data name="R5014094" xml:space="preserve">
+    <value>M大文本</value>
+  </data>
+  <data name="R5014095" xml:space="preserve">
+    <value>S簽名控制項</value>
+  </data>
+  <data name="R5014096" xml:space="preserve">
+    <value>E審批控制項</value>
+  </data>
+  <data name="R5014097" xml:space="preserve">
+    <value>A附件控制項</value>
+  </data>
+  <data name="R5014098" xml:space="preserve">
+    <value>I圖片控制項</value>
+  </data>
+  <data name="R5014099" xml:space="preserve">
+    <value>TD細表控制項</value>
+  </data>
+  <data name="R5014100" xml:space="preserve">
+    <value>TB細表控制項(清單查找)</value>
+  </data>
+  <data name="R5014101" xml:space="preserve">
+    <value>U使用者選擇</value>
+  </data>
+  <data name="R5014102" xml:space="preserve">
+    <value>H隱藏欄位</value>
+  </data>
+  <data name="R5014103" xml:space="preserve">
+    <value>F複合控制項</value>
+  </data>
+  <data name="R5014104" xml:space="preserve">
+    <value>J計算控制項</value>
+  </data>
+  <data name="R5014105" xml:space="preserve">
+    <value>PH預留位置</value>
+  </data>
+  <data name="R5014106" xml:space="preserve">
+    <value>富文本</value>
+  </data>
+  <data name="R5014107" xml:space="preserve">
+    <value>審批歷程</value>
+  </data>
+  <data name="R5014108" xml:space="preserve">
+    <value>文本輸出</value>
+  </data>
+  <data name="R5014109" xml:space="preserve">
+    <value>標籤</value>
+  </data>
+  <data name="R5014110" xml:space="preserve">
+    <value>創建資訊標籤</value>
+  </data>
+  <data name="R5014111" xml:space="preserve">
+    <value>修改資訊標籤</value>
+  </data>
+  <data name="R5014112" xml:space="preserve">
+    <value>TA細表添加行</value>
+  </data>
+  <data name="R5014113" xml:space="preserve">
+    <value>單選框</value>
+  </data>
+  <data name="R5014114" xml:space="preserve">
+    <value>核取方塊</value>
+  </data>
+  <data name="R5014115" xml:space="preserve">
+    <value>數值框</value>
+  </data>
+  <data name="R5014116" xml:space="preserve">
+    <value>日期時間框</value>
+  </data>
+  <data name="R5014117" xml:space="preserve">
+    <value>下拉清單</value>
+  </data>
+  <data name="R5014118" xml:space="preserve">
+    <value>細表控制項</value>
+  </data>
+  <data name="R5014119" xml:space="preserve">
+    <value>細表添加行</value>
+  </data>
+  <data name="R5014120" xml:space="preserve">
+    <value>附件控制項</value>
+  </data>
+  <data name="R5014121" xml:space="preserve">
+    <value>計算控制項</value>
+  </data>
+  <data name="R5014122" xml:space="preserve">
+    <value>隱藏欄位</value>
+  </data>
+  <data name="R5014123" xml:space="preserve">
+    <value>使用者選擇</value>
+  </data>
+  <data name="R5014124" xml:space="preserve">
+    <value>簽名控制項</value>
+  </data>
+  <data name="R5014125" xml:space="preserve">
+    <value>圖片控制項</value>
+  </data>
+  <data name="R5014126" xml:space="preserve">
+    <value>審批(文本)</value>
+  </data>
+  <data name="R5014127" xml:space="preserve">
+    <value>審批(簽名)</value>
+  </data>
+  <data name="R5014128" xml:space="preserve">
+    <value>審批(簽名+意見)</value>
+  </data>
+  <data name="R5014129" xml:space="preserve">
+    <value>審批(文本+無同意)</value>
+  </data>
+  <data name="R5014130" xml:space="preserve">
+    <value>審批(簽名+無同意)</value>
+  </data>
+  <data name="R5014131" xml:space="preserve">
+    <value>搜索框</value>
+  </data>
+  <data name="R5014132" xml:space="preserve">
+    <value>複選清單</value>
+  </data>
+  <data name="R5014133" xml:space="preserve">
+    <value>全刪全加</value>
+  </data>
+  <data name="R5014134" xml:space="preserve">
+    <value>更新模式</value>
+  </data>
+  <data name="R5014135" xml:space="preserve">
+    <value>普通表</value>
+  </data>
+  <data name="R5014136" xml:space="preserve">
+    <value>費用表</value>
+  </data>
+  <data name="R5014137" xml:space="preserve">
+    <value>收付款方式</value>
+  </data>
+  <data name="R5014138" xml:space="preserve">
+    <value>下拉清單I</value>
+  </data>
+  <data name="R5014139" xml:space="preserve">
+    <value>下拉清單II</value>
+  </data>
+  <data name="R5014140" xml:space="preserve">
+    <value>單選清單</value>
+  </data>
+  <data name="R5014141" xml:space="preserve">
+    <value>頁框控制項</value>
+  </data>
+  <data name="R5014142" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="R5014143" xml:space="preserve">
+    <value>最小</value>
+  </data>
+  <data name="R5014144" xml:space="preserve">
+    <value>最大</value>
+  </data>
+  <data name="R5014145" xml:space="preserve">
+    <value>計數</value>
+  </data>
+  <data name="R5014146" xml:space="preserve">
+    <value>平均</value>
+  </data>
+  <data name="R5014147" xml:space="preserve">
+    <value>無需確認</value>
+  </data>
+  <data name="R5014148" xml:space="preserve">
+    <value>單行錄入</value>
+  </data>
+  <data name="R5014149" xml:space="preserve">
+    <value>多行錄入</value>
+  </data>
+  <data name="R5014150" xml:space="preserve">
+    <value>需要確認</value>
+  </data>
+  <data name="R5014151" xml:space="preserve">
+    <value>普通查詢</value>
+  </data>
+  <data name="R5014152" xml:space="preserve">
+    <value>草稿查詢</value>
+  </data>
+  <data name="R5014153" xml:space="preserve">
+    <value>審批查詢</value>
+  </data>
+  <data name="R5014154" xml:space="preserve">
+    <value>匯總查詢</value>
+  </data>
+  <data name="R5014155" xml:space="preserve">
+    <value>(空)</value>
+  </data>
+  <data name="R5014156" xml:space="preserve">
+    <value>沖銷</value>
+  </data>
+  <data name="R5014157" xml:space="preserve">
+    <value>憑證標記</value>
+  </data>
+  <data name="R5014158" xml:space="preserve">
+    <value>憑證確認</value>
+  </data>
+  <data name="R5014159" xml:space="preserve">
+    <value>關閉/恢復</value>
+  </data>
+  <data name="R5014160" xml:space="preserve">
+    <value>行關閉/行恢復</value>
+  </data>
+  <data name="R5014161" xml:space="preserve">
+    <value>費用關閉/行恢復</value>
+  </data>
+  <data name="R5014162" xml:space="preserve">
+    <value>變更業務夥伴</value>
+  </data>
+  <data name="R5014163" xml:space="preserve">
+    <value>變更擁有者</value>
+  </data>
+  <data name="R5014164" xml:space="preserve">
+    <value>變更憑證日期</value>
+  </data>
+  <data name="R5014165" xml:space="preserve">
+    <value>變更受控欄位</value>
+  </data>
+  <data name="R5014166" xml:space="preserve">
+    <value>草稿: 刪除</value>
+  </data>
+  <data name="R5014167" xml:space="preserve">
+    <value>草稿: 添加為憑證</value>
+  </data>
+  <data name="R5014168" xml:space="preserve">
+    <value>審批草稿: 撤銷審批</value>
+  </data>
+  <data name="R5014169" xml:space="preserve">
+    <value>審批草稿: 添加為憑證</value>
+  </data>
+  <data name="R5014170" xml:space="preserve">
+    <value>(無)</value>
+  </data>
+  <data name="R5014171" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="R5014172" xml:space="preserve">
+    <value>恢復</value>
+  </data>
+  <data name="R5014173" xml:space="preserve">
+    <value>EDI導入</value>
+  </data>
+  <data name="R5014174" xml:space="preserve">
+    <value>未分類</value>
+  </data>
+  <data name="R5014175" xml:space="preserve">
+    <value>區域A</value>
+  </data>
+  <data name="R5014176" xml:space="preserve">
+    <value>區域B</value>
+  </data>
+  <data name="R5014177" xml:space="preserve">
+    <value>區域C</value>
+  </data>
+  <data name="R5014178" xml:space="preserve">
+    <value>區域D</value>
+  </data>
+  <data name="R5014179" xml:space="preserve">
+    <value>區域E</value>
+  </data>
+  <data name="R5014180" xml:space="preserve">
+    <value>區域F</value>
+  </data>
+  <data name="R5014181" xml:space="preserve">
+    <value>細表</value>
+  </data>
+  <data name="R5014182" xml:space="preserve">
+    <value>擴展欄位[{0}]已刪除.</value>
+  </data>
+  <data name="R5014183" xml:space="preserve">
+    <value>階段已變更,請刷新頁面.</value>
+  </data>
+  <data name="R5014184" xml:space="preserve">
+    <value>自訂業務已刪除.</value>
+  </data>
+  <data name="R5014185" xml:space="preserve">
+    <value>自訂業務細表已刪除.</value>
+  </data>
+  <data name="R5014186" xml:space="preserve">
+    <value>自訂業務細表[{0}]已停用.</value>
+  </data>
+  <data name="R5014187" xml:space="preserve">
+    <value>自訂業務細表[{0}]表[{1}]未定義主鍵.</value>
+  </data>
+  <data name="R5014188" xml:space="preserve">
+    <value>自訂業務[{0}]已停用.</value>
+  </data>
+  <data name="R5014189" xml:space="preserve">
+    <value>自訂業務[{0}]表[{1}]未定義主鍵.</value>
+  </data>
+  <data name="R5014190" xml:space="preserve">
+    <value>自訂業務[{0}]未定義清單查詢.</value>
+  </data>
+  <data name="R5014191" xml:space="preserve">
+    <value>按照功能更新許可權設置, 自訂業務編碼:{0};</value>
+  </data>
+  <data name="R5014192" xml:space="preserve">
+    <value>按照崗位更新自訂業務許可權, 崗位編號:{0};</value>
+  </data>
+  <data name="R5014193" xml:space="preserve">
+    <value>複製自訂業務許可權設置, 從崗位{0}到崗位{1};</value>
+  </data>
+  <data name="R5014194" xml:space="preserve">
+    <value>表[{0}]的主鍵超過2個, 多主鍵尚未支持內嵌文檔.</value>
+  </data>
+  <data name="R5014195" xml:space="preserve">
+    <value>清單查詢[{0}]未定義.</value>
+  </data>
+  <data name="R5014196" xml:space="preserve">
+    <value>控件[{0}]的擺放位置不明確.</value>
+  </data>
+  <data name="R5014197" xml:space="preserve">
+    <value>控制項[{0}]綁定資料異常: {1}</value>
+  </data>
+  <data name="R5014198" xml:space="preserve">
+    <value>{0}[{1}]的方法{0}調用無效.</value>
+  </data>
+  <data name="R5014199" xml:space="preserve">
+    <value>{0}[{1}]尚未支援定義費用.</value>
+  </data>
+  <data name="R5014200" xml:space="preserve">
+    <value>{0}[{1}]尚未支援單據Web化.</value>
+  </data>
+  <data name="R5014201" xml:space="preserve">
+    <value>支票支付</value>
+  </data>
+  <data name="R5014202" xml:space="preserve">
+    <value>銀行轉帳</value>
+  </data>
+  <data name="R5014203" xml:space="preserve">
+    <value>現金支付</value>
+  </data>
+  <data name="R5014204" xml:space="preserve">
+    <value>{0} 資料未找到.</value>
+  </data>
+  <data name="R5014205" xml:space="preserve">
+    <value>{0} 草稿 {1} 未找到.</value>
+  </data>
+  <data name="R5014206" xml:space="preserve">
+    <value>{0} 審批草稿 {1} 未找到.</value>
+  </data>
+  <data name="R5014207" xml:space="preserve">
+    <value>{0} 審批草稿 {1} 已添加為正式憑證.</value>
+  </data>
+  <data name="R5014208" xml:space="preserve">
+    <value>{0} 審批草稿 {1} 已撤銷審批.</value>
+  </data>
+  <data name="R5014209" xml:space="preserve">
+    <value>沖銷單據時觸發了審批流程, 沖銷操作已終止!</value>
+  </data>
+  <data name="R5014210" xml:space="preserve">
+    <value>憑證確認時觸發了審批流程, 操作已終止!</value>
+  </data>
+  <data name="R5014211" xml:space="preserve">
+    <value>憑證標記時觸發了審批流程, 操作已終止!</value>
+  </data>
+  <data name="R5014212" xml:space="preserve">
+    <value>草稿添加為正式憑證時觸發了審批流程, 操作已終止!</value>
+  </data>
+  <data name="R5014213" xml:space="preserve">
+    <value>未能找到資料分析報表[{0}]</value>
+  </data>
+  <data name="R5014214" xml:space="preserve">
+    <value>無法確定報表[{0}]的類型</value>
+  </data>
+  <data name="R5014215" xml:space="preserve">
+    <value>分組</value>
+  </data>
+  <data name="R5014216" xml:space="preserve">
+    <value>{0}年度</value>
+  </data>
+  <data name="R5014217" xml:space="preserve">
+    <value>比例</value>
+  </data>
+  <data name="R5014218" xml:space="preserve">
+    <value>增長率</value>
+  </data>
+  <data name="R5014219" xml:space="preserve">
+    <value>未能載入報表[{0}]行資料</value>
+  </data>
+  <data name="R5014220" xml:space="preserve">
+    <value>年度</value>
+  </data>
+  <data name="R5014221" xml:space="preserve">
+    <value>月份</value>
+  </data>
+  <data name="R5014222" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="R5014223" xml:space="preserve">
+    <value>周次</value>
+  </data>
+  <data name="R5014224" xml:space="preserve">
+    <value>分類1</value>
+  </data>
+  <data name="R5014225" xml:space="preserve">
+    <value>分類2</value>
+  </data>
+  <data name="R5014226" xml:space="preserve">
+    <value>分類3</value>
+  </data>
+  <data name="R5014227" xml:space="preserve">
+    <value>分類4</value>
+  </data>
+  <data name="R5014228" xml:space="preserve">
+    <value>分類5</value>
+  </data>
+  <data name="R5014229" xml:space="preserve">
+    <value>屬性1</value>
+  </data>
+  <data name="R5014230" xml:space="preserve">
+    <value>屬性2</value>
+  </data>
+  <data name="R5014231" xml:space="preserve">
+    <value>屬性3</value>
+  </data>
+  <data name="R5014232" xml:space="preserve">
+    <value>數值1</value>
+  </data>
+  <data name="R5014233" xml:space="preserve">
+    <value>數值2</value>
+  </data>
+  <data name="R5014234" xml:space="preserve">
+    <value>數值3</value>
+  </data>
+  <data name="R5014235" xml:space="preserve">
+    <value>數值4</value>
+  </data>
+  <data name="R5014236" xml:space="preserve">
+    <value>數值5</value>
+  </data>
+  <data name="R5014237" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="R5014238" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="R5014239" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="R5014240" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="R5014241" xml:space="preserve">
+    <value>系統</value>
+  </data>
+  <data name="R5014242" xml:space="preserve">
+    <value>資料</value>
+  </data>
+  <data name="R5014243" xml:space="preserve">
+    <value>比較</value>
+  </data>
+  <data name="R5014244" xml:space="preserve">
+    <value>明細</value>
+  </data>
+  <data name="R5014245" xml:space="preserve">
+    <value>交叉(系統)</value>
+  </data>
+  <data name="R5014246" xml:space="preserve">
+    <value>交叉(資料)</value>
+  </data>
+  <data name="R5014247" xml:space="preserve">
+    <value>客戶</value>
+  </data>
+  <data name="R5014248" xml:space="preserve">
+    <value>供應商</value>
+  </data>
+  <data name="R5014249" xml:space="preserve">
+    <value>員工</value>
+  </data>
+  <data name="R5014250" xml:space="preserve">
+    <value>部門</value>
+  </data>
+  <data name="R5014251" xml:space="preserve">
+    <value>工作中心</value>
+  </data>
+  <data name="R5014252" xml:space="preserve">
+    <value>文本輸入</value>
+  </data>
+  <data name="R5014253" xml:space="preserve">
+    <value>從範本選擇</value>
+  </data>
+  <data name="R5014254" xml:space="preserve">
+    <value>一月</value>
+  </data>
+  <data name="R5014255" xml:space="preserve">
+    <value>二月</value>
+  </data>
+  <data name="R5014256" xml:space="preserve">
+    <value>三月</value>
+  </data>
+  <data name="R5014257" xml:space="preserve">
+    <value>四月</value>
+  </data>
+  <data name="R5014258" xml:space="preserve">
+    <value>五月</value>
+  </data>
+  <data name="R5014259" xml:space="preserve">
+    <value>六月</value>
+  </data>
+  <data name="R5014260" xml:space="preserve">
+    <value>七月</value>
+  </data>
+  <data name="R5014261" xml:space="preserve">
+    <value>八月</value>
+  </data>
+  <data name="R5014262" xml:space="preserve">
+    <value>九月</value>
+  </data>
+  <data name="R5014263" xml:space="preserve">
+    <value>十月</value>
+  </data>
+  <data name="R5014264" xml:space="preserve">
+    <value>十一月</value>
+  </data>
+  <data name="R5014265" xml:space="preserve">
+    <value>十二月</value>
+  </data>
+  <data name="R5014266" xml:space="preserve">
+    <value>憑證性質為0的不允許編輯或刪除</value>
+  </data>
+  <data name="R5014267" xml:space="preserve">
+    <value>該憑證性質已被使用,不允許刪除</value>
+  </data>
+  <data name="R5014268" xml:space="preserve">
+    <value>主鍵重複,已存在主鍵[{0}]的記錄!</value>
+  </data>
+  <data name="R5014269" xml:space="preserve">
+    <value>{0}不能為空!</value>
+  </data>
+  <data name="R5014270" xml:space="preserve">
+    <value>編碼長度不允許大於對應欄位長度</value>
+  </data>
+  <data name="R5014271" xml:space="preserve">
+    <value>分段總合不允許大於編碼長度</value>
+  </data>
+  <data name="R5014272" xml:space="preserve">
+    <value>錯誤的分段格式值!</value>
+  </data>
+  <data name="R5014273" xml:space="preserve">
+    <value>自動編號長度不允許大於編碼長度</value>
+  </data>
+  <data name="R5014274" xml:space="preserve">
+    <value>原始數長度不允許大於自動編號長度</value>
+  </data>
+  <data name="R5014275" xml:space="preserve">
+    <value>不允許新增節點!</value>
+  </data>
+  <data name="R5014276" xml:space="preserve">
+    <value>編號與編碼規則不匹配!</value>
+  </data>
+  <data name="R5014277" xml:space="preserve">
+    <value>找不到定義的{0}欄位!</value>
+  </data>
+  <data name="R5014278" xml:space="preserve">
+    <value>不允許定義重複的編碼!</value>
+  </data>
+  <data name="R5014279" xml:space="preserve">
+    <value>編碼長度不允許大於定義的長度</value>
+  </data>
+  <data name="R5014280" xml:space="preserve">
+    <value>編碼長度必須等於定義的長度</value>
+  </data>
+  <data name="R5014281" xml:space="preserve">
+    <value>編碼長度不允許小於定義的長度</value>
+  </data>
+  <data name="R5014282" xml:space="preserve">
+    <value>運算</value>
+  </data>
+  <data name="R5014283" xml:space="preserve">
+    <value>檢查</value>
+  </data>
+  <data name="R5014284" xml:space="preserve">
+    <value>匯總</value>
+  </data>
+  <data name="R5014285" xml:space="preserve">
+    <value>我的收藏夾</value>
+  </data>
+  <data name="R5014286" xml:space="preserve">
+    <value>不能把資料夾移動到屬於自己的資料夾中</value>
+  </data>
+  <data name="R5014287" xml:space="preserve">
+    <value>該表單不能加入我的最愛</value>
+  </data>
+  <data name="R5014288" xml:space="preserve">
+    <value>含有子資料夾的資料夾不能刪除.</value>
+  </data>
+  <data name="R5014289" xml:space="preserve">
+    <value>開始執行操作</value>
+  </data>
+  <data name="R5014290" xml:space="preserve">
+    <value>成功創建控制項[{0}]設置</value>
+  </data>
+  <data name="R5014291" xml:space="preserve">
+    <value>成功更新控制項[{0}]設置</value>
+  </data>
+  <data name="R5014292" xml:space="preserve">
+    <value>共更新{0}個控制項設置, 成功{1}個, 失敗{2}個</value>
+  </data>
+  <data name="R5014293" xml:space="preserve">
+    <value>成功更新[{0}]控制項[{1}]設置</value>
+  </data>
+  <data name="R5014294" xml:space="preserve">
+    <value>更新[{0}]控制項[{1}]設置失敗, 不存在對應的控制項設置</value>
+  </data>
+  <data name="R5014295" xml:space="preserve">
+    <value>修改表單{0}的自訂設置.</value>
+  </data>
+  <data name="R5014296" xml:space="preserve">
+    <value>修改表單{0}的自訂設置, 僅添加不存在的.</value>
+  </data>
+  <data name="R5014297" xml:space="preserve">
+    <value>清除表單{0}的自訂設置(高級版本).</value>
+  </data>
+  <data name="R5014298" xml:space="preserve">
+    <value>修改表單{0}的自訂設置(簡單版本).</value>
+  </data>
+  <data name="R5014299" xml:space="preserve">
+    <value>當前介面未定義控制項設置.</value>
+  </data>
+  <data name="R5014300" xml:space="preserve">
+    <value>表單設置[{0}]保存歷史.</value>
+  </data>
+  <data name="R5014301" xml:space="preserve">
+    <value>指定的表單設置歷史不存在.</value>
+  </data>
+  <data name="R5014302" xml:space="preserve">
+    <value>表單設置[{0}]刪除歷史[{1}].</value>
+  </data>
+  <data name="R5014303" xml:space="preserve">
+    <value>表單設置[{0}]從歷史[{1}]恢復.</value>
+  </data>
+  <data name="R5014304" xml:space="preserve">
+    <value>未定義的點資料執行計畫.</value>
+  </data>
+  <data name="R5014305" xml:space="preserve">
+    <value>未能找到 點資料範本[{0}]</value>
+  </data>
+  <data name="R5014306" xml:space="preserve">
+    <value>返回記錄 {0}.</value>
+  </data>
+  <data name="R5014307" xml:space="preserve">
+    <value>當前的條件對應的KPI資料已傳輸, 不可重複生成.</value>
+  </data>
+  <data name="R5014308" xml:space="preserve">
+    <value>獲取指標資料 {0}[{1}]</value>
+  </data>
+  <data name="R5014309" xml:space="preserve">
+    <value>點資料發送.</value>
+  </data>
+  <data name="R5014310" xml:space="preserve">
+    <value>未能找到待發送資料.</value>
+  </data>
+  <data name="R5014311" xml:space="preserve">
+    <value>輸入參數</value>
+  </data>
+  <data name="R5014312" xml:space="preserve">
+    <value>系統參數</value>
+  </data>
+  <data name="R5014313" xml:space="preserve">
+    <value>固定值</value>
+  </data>
+  <data name="R5014314" xml:space="preserve">
+    <value>業務所定義的清單查詢[{0}]不存在.</value>
+  </data>
+  <data name="R5014315" xml:space="preserve">
+    <value>保存Home清單[{0}]列設置</value>
+  </data>
+  <data name="R5014316" xml:space="preserve">
+    <value>行關閉</value>
+  </data>
+  <data name="R5014317" xml:space="preserve">
+    <value>解鎖</value>
+  </data>
+  <data name="R5014318" xml:space="preserve">
+    <value>條形碼</value>
+  </data>
+  <data name="R5014319" xml:space="preserve">
+    <value>基礎資料</value>
+  </data>
+  <data name="R5014320" xml:space="preserve">
+    <value>單據狀態</value>
+  </data>
+  <data name="R5014321" xml:space="preserve">
+    <value>行狀態</value>
+  </data>
+  <data name="R5014322" xml:space="preserve">
+    <value>打開業務</value>
+  </data>
+  <data name="R5014323" xml:space="preserve">
+    <value>鎖定列</value>
+  </data>
+  <data name="R5014324" xml:space="preserve">
+    <value>Boolean列</value>
+  </data>
+  <data name="R5014325" xml:space="preserve">
+    <value>複合控制項</value>
+  </data>
+  <data name="R5014326" xml:space="preserve">
+    <value>物件[{0}]查詢清單參數設置.</value>
+  </data>
+  <data name="R5014327" xml:space="preserve">
+    <value>基礎憑證清單中不允許出現重複的物件類型和憑證性質!</value>
+  </data>
+  <data name="R5014328" xml:space="preserve">
+    <value>基礎憑證清單中不允許出現重複的物件類型!</value>
+  </data>
+  <data name="R5014329" xml:space="preserve">
+    <value>頁面[{0}]已生成控制項設置.</value>
+  </data>
+  <data name="R5014330" xml:space="preserve">
+    <value>頁面[{0}]初始化介面設置.</value>
+  </data>
+  <data name="R5014331" xml:space="preserve">
+    <value>頁面[{0}]添加新控制項.</value>
+  </data>
+  <data name="R5014332" xml:space="preserve">
+    <value>頁面[{0}]修改介面設置.</value>
+  </data>
+  <data name="R5014333" xml:space="preserve">
+    <value>頁面[{0}]清理介面設置.</value>
+  </data>
+  <data name="R5014334" xml:space="preserve">
+    <value>已從備份數據庫進行恢復!</value>
+  </data>
+  <data name="R5014335" xml:space="preserve">
+    <value>已備份至空資料庫!</value>
+  </data>
+  <data name="R5014336" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="R5014337" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="R5014338" xml:space="preserve">
+    <value>(缺省)</value>
+  </data>
+  <data name="R5014339" xml:space="preserve">
+    <value>顯示</value>
+  </data>
+  <data name="R5014340" xml:space="preserve">
+    <value>隱藏</value>
+  </data>
+  <data name="R5014341" xml:space="preserve">
+    <value>左側</value>
+  </data>
+  <data name="R5014342" xml:space="preserve">
+    <value>右側</value>
+  </data>
+  <data name="R5014343" xml:space="preserve">
+    <value>居中</value>
+  </data>
+  <data name="R5014344" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="R5014345" xml:space="preserve">
+    <value>字元型</value>
+  </data>
+  <data name="R5014346" xml:space="preserve">
+    <value>浮點型</value>
+  </data>
+  <data name="R5014347" xml:space="preserve">
+    <value>布爾型</value>
+  </data>
+  <data name="R5014348" xml:space="preserve">
+    <value>分組標題</value>
+  </data>
+  <data name="R5014349" xml:space="preserve">
+    <value>單子控制項:245px</value>
+  </data>
+  <data name="R5014350" xml:space="preserve">
+    <value>雙子控制項:94px/141px</value>
+  </data>
+  <data name="R5014351" xml:space="preserve">
+    <value>三子控制項:94px/110px/21px</value>
+  </data>
+  <data name="R5014352" xml:space="preserve">
+    <value>編輯頁</value>
+  </data>
+  <data name="R5014353" xml:space="preserve">
+    <value>流覽頁</value>
+  </data>
+  <data name="R5014354" xml:space="preserve">
+    <value>框架頁</value>
+  </data>
+  <data name="R5014355" xml:space="preserve">
+    <value>清單頁</value>
+  </data>
+  <data name="R5014356" xml:space="preserve">
+    <value>行添加頁</value>
+  </data>
+  <data name="R5014357" xml:space="preserve">
+    <value>行編輯頁</value>
+  </data>
+  <data name="R5014358" xml:space="preserve">
+    <value>單據費用編輯頁</value>
+  </data>
+  <data name="R5014359" xml:space="preserve">
+    <value>單據費用流覽頁</value>
+  </data>
+  <data name="R5014360" xml:space="preserve">
+    <value>單據費用框架頁</value>
+  </data>
+  <data name="R5014361" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="R5014362" xml:space="preserve">
+    <value>版面設定[{0}]保存歷史.</value>
+  </data>
+  <data name="R5014363" xml:space="preserve">
+    <value>指定的版面設定歷史不存在.</value>
+  </data>
+  <data name="R5014364" xml:space="preserve">
+    <value>版面設定[{0}]刪除歷史[{1}].</value>
+  </data>
+  <data name="R5014365" xml:space="preserve">
+    <value>版面設定[{0}]從歷史[{1}]恢復.</value>
+  </data>
+  <data name="R5014366" xml:space="preserve">
+    <value>該物件號已被使用!</value>
+  </data>
+  <data name="R5014367" xml:space="preserve">
+    <value>該物件號已被申請!</value>
+  </data>
+  <data name="R5014368" xml:space="preserve">
+    <value>輸入的物件號必須以{0}開頭!</value>
+  </data>
+  <data name="R5014369" xml:space="preserve">
+    <value>該物件號申請已經確認,不可以刪除!</value>
+  </data>
+  <data name="R5014370" xml:space="preserve">
+    <value>請確認已輸入正確的物件號!</value>
+  </data>
+  <data name="R5014371" xml:space="preserve">
+    <value>成功確認了{0}個申請</value>
+  </data>
+  <data name="R5014372" xml:space="preserve">
+    <value>已核准,不可進行取消確認操作!</value>
+  </data>
+  <data name="R5014373" xml:space="preserve">
+    <value>成功了核准{0}個申請</value>
+  </data>
+  <data name="R5014374" xml:space="preserve">
+    <value>樹型查找[{0}]未定義.</value>
+  </data>
+  <data name="R5014375" xml:space="preserve">
+    <value>清單查找[{0}]未定義.</value>
+  </data>
+  <data name="R5014376" xml:space="preserve">
+    <value>業務引用框{0}未定義查詢.</value>
+  </data>
+  <data name="R5014377" xml:space="preserve">
+    <value>業務{0}引用{1}未定義查詢.</value>
+  </data>
+  <data name="R5014378" xml:space="preserve">
+    <value>批次引用框[{0}]未定義查詢.</value>
+  </data>
+  <data name="R5014379" xml:space="preserve">
+    <value>錯誤的運算式,{0}</value>
+  </data>
+  <data name="R5014380" xml:space="preserve">
+    <value>主細表</value>
+  </data>
+  <data name="R5014381" xml:space="preserve">
+    <value>單表</value>
+  </data>
+  <data name="R5014382" xml:space="preserve">
+    <value>分拆</value>
+  </data>
+  <data name="R5014383" xml:space="preserve">
+    <value>目標物件:{0}</value>
+  </data>
+  <data name="R5014384" xml:space="preserve">
+    <value>源物件:{0}</value>
+  </data>
+  <data name="R5014385" xml:space="preserve">
+    <value>憑證性質:{0}[{1}]</value>
+  </data>
+  <data name="R5014386" xml:space="preserve">
+    <value>錯誤的運算式</value>
+  </data>
+  <data name="R5014387" xml:space="preserve">
+    <value>未定義的自動郵件發送規則.</value>
+  </data>
+  <data name="R5014388" xml:space="preserve">
+    <value>未找到郵件發送{0}的相關資料!</value>
+  </data>
+  <data name="R5014389" xml:space="preserve">
+    <value>請輸入必填參數</value>
+  </data>
+  <data name="R5014390" xml:space="preserve">
+    <value>行{0}尚未連結自訂查詢.</value>
+  </data>
+  <data name="R5014391" xml:space="preserve">
+    <value>行{0}所連結的自訂查詢無效.</value>
+  </data>
+  <data name="R5014392" xml:space="preserve">
+    <value>左對齊</value>
+  </data>
+  <data name="R5014393" xml:space="preserve">
+    <value>右對齊</value>
+  </data>
+  <data name="R5014394" xml:space="preserve">
+    <value>當前業務無可用的序列!</value>
+  </data>
+  <data name="R5014395" xml:space="preserve">
+    <value>沒有足夠的許可權訪問此序列!</value>
+  </data>
+  <data name="R5014396" xml:space="preserve">
+    <value>你使用的序列已經停用!</value>
+  </data>
+  <data name="R5014397" xml:space="preserve">
+    <value>序列編號已經超過該最大編號!</value>
+  </data>
+  <data name="R5014398" xml:space="preserve">
+    <value>當前設置的編號範圍與其他序列重複，請修改編號範圍！</value>
+  </data>
+  <data name="R5014399" xml:space="preserve">
+    <value>禁止刪除預設序列</value>
+  </data>
+  <data name="R5014400" xml:space="preserve">
+    <value>編號為零的序列禁止刪除!</value>
+  </data>
+  <data name="R5014401" xml:space="preserve">
+    <value>禁止刪除已經使用的序列!</value>
+  </data>
+  <data name="R5014402" xml:space="preserve">
+    <value>禁止更新已經使用序列的首數!</value>
+  </data>
+  <data name="R5014403" xml:space="preserve">
+    <value>只有管理員才能進行憑證序號新增編輯操作!</value>
+  </data>
+  <data name="R5014404" xml:space="preserve">
+    <value>禁止關閉預設序列!</value>
+  </data>
+  <data name="R5014405" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="R5014406" xml:space="preserve">
+    <value>所有用戶</value>
+  </data>
+  <data name="R5014407" xml:space="preserve">
+    <value>所有崗位</value>
+  </data>
+  <data name="R5014408" xml:space="preserve">
+    <value>列印服務</value>
+  </data>
+  <data name="R5014409" xml:space="preserve">
+    <value>PDF轉換服務</value>
+  </data>
+  <data name="R5014410" xml:space="preserve">
+    <value>禁止編輯系統或不屬於自己的查詢方案</value>
+  </data>
+  <data name="R5014411" xml:space="preserve">
+    <value>禁止刪除系統或不屬於自己的查詢方案</value>
+  </data>
+  <data name="R5014412" xml:space="preserve">
+    <value>驗證通過</value>
+  </data>
+  <data name="R5014413" xml:space="preserve">
+    <value>當前沒有數據,無法修改數據</value>
+  </data>
+  <data name="R5014414" xml:space="preserve">
+    <value>系統查詢方案不允許修改!</value>
+  </data>
+  <data name="R5014415" xml:space="preserve">
+    <value>本方案不是你所有, 不能修改!</value>
+  </data>
+  <data name="R5014416" xml:space="preserve">
+    <value>當前查詢方案為非共享的, 請選擇其他方案!</value>
+  </data>
+  <data name="R5014417" xml:space="preserve">
+    <value>欄位[{0}]不存在於資料庫內.</value>
+  </data>
+  <data name="R5014418" xml:space="preserve">
+    <value>請先選擇需要載入的崗位!</value>
+  </data>
+  <data name="R5014419" xml:space="preserve">
+    <value>欄位許可權[{0}] 授權.</value>
+  </data>
+  <data name="R5014420" xml:space="preserve">
+    <value>數據未找到!</value>
+  </data>
+  <data name="R5014421" xml:space="preserve">
+    <value>嘗試更新的範本欄位沒有找到!</value>
+  </data>
+  <data name="R5014422" xml:space="preserve">
+    <value>存在使用此範本且本欄位為空的資料. 嘗試更新的範本欄位為非空失敗! </value>
+  </data>
+  <data name="R5014423" xml:space="preserve">
+    <value>本範本欄位更新將導致使用範本的資料對應欄位被清空, 但是欄位不能為空!</value>
+  </data>
+  <data name="R5014424" xml:space="preserve">
+    <value>本範本已被引用不允許更新!</value>
+  </data>
+  <data name="R5014425" xml:space="preserve">
+    <value>當前沒有數據,無法添加數據</value>
+  </data>
+  <data name="R5014426" xml:space="preserve">
+    <value>您的郵箱 或 個人檔櫃已滿, 請及時清理</value>
+  </data>
+  <data name="R5014427" xml:space="preserve">
+    <value>郵箱大小：{0}</value>
+  </data>
+  <data name="R5014428" xml:space="preserve">
+    <value>已使用空間：{0}</value>
+  </data>
+  <data name="R5014429" xml:space="preserve">
+    <value>已使用百分比：{0}</value>
+  </data>
+  <data name="R5014430" xml:space="preserve">
+    <value>個人檔櫃：{0}</value>
+  </data>
+  <data name="R5014431" xml:space="preserve">
+    <value>自定義查詢</value>
+  </data>
+  <data name="R5014432" xml:space="preserve">
+    <value>消息</value>
+  </data>
+  <data name="R5014433" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="R5014434" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="R5014435" xml:space="preserve">
+    <value>未定義的自動資料檢查.</value>
+  </data>
+  <data name="R5014436" xml:space="preserve">
+    <value>未定義的自動資料檢查項目[{0}].</value>
+  </data>
+  <data name="R5014437" xml:space="preserve">
+    <value>自動資料檢查項目[{0}]未定義查詢.</value>
+  </data>
+  <data name="R5014438" xml:space="preserve">
+    <value>檢查已通過.</value>
+  </data>
+  <data name="R5014439" xml:space="preserve">
+    <value>檢查未通過, 返回{0}行錯誤資料.</value>
+  </data>
+  <data name="R5014440" xml:space="preserve">
+    <value>檢查已通過, 計{0}行.</value>
+  </data>
+  <data name="R5014441" xml:space="preserve">
+    <value>檢查未通過, 未能查得任何資料.</value>
+  </data>
+  <data name="R5014442" xml:space="preserve">
+    <value>控制項未定義清單查找或清單查找不存在</value>
+  </data>
+  <data name="R5019307" xml:space="preserve">
+    <value>控制項未定義細表或細表不存在</value>
+  </data>
+  <data name="R5019308" xml:space="preserve">
+    <value>未定義細表控制項或細表控制項不存在</value>
+  </data>
+  <data name="R5019309" xml:space="preserve">
+    <value>複合控制項|預留位置不適用於Html設計</value>
+  </data>
+  <data name="R5019310" xml:space="preserve">
+    <value>細表添加行不適用於區域設計</value>
+  </data>
+  <data name="R5019311" xml:space="preserve">
+    <value>內容欄位不存在</value>
+  </data>
+  <data name="R5019312" xml:space="preserve">
+    <value>階段</value>
+  </data>
+  <data name="R5019388" xml:space="preserve">
+    <value>欄位附件控制項</value>
+  </data>
+</root>

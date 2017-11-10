@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="R5013906" xml:space="preserve">
+    <value>不控制</value>
+  </data>
+  <data name="R5013912" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="R5013913" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="R5013915" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="R5013917" xml:space="preserve">
+    <value>未年转</value>
+  </data>
+  <data name="R5013918" xml:space="preserve">
+    <value>已年转</value>
+  </data>
+  <data name="R5013919" xml:space="preserve">
+    <value>已审核</value>
+  </data>
+  <data name="R5013920" xml:space="preserve">
+    <value>整数</value>
+  </data>
+  <data name="R5013921" xml:space="preserve">
+    <value>数值</value>
+  </data>
+  <data name="R5013922" xml:space="preserve">
+    <value>字符</value>
+  </data>
+  <data name="R5013923" xml:space="preserve">
+    <value>可用</value>
+  </data>
+  <data name="R5013924" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="R5013927" xml:space="preserve">
+    <value>锁定</value>
+  </data>
+  <data name="R5013928" xml:space="preserve">
+    <value>保密</value>
+  </data>
+  <data name="R5013938" xml:space="preserve">
+    <value>日期[{0:yyyy-MM-dd}]所在的期间无效!</value>
+  </data>
+  <data name="R5013969" xml:space="preserve">
+    <value>未找到期间{0}</value>
+  </data>
+  <data name="R5014015" xml:space="preserve">
+    <value>凭证编号</value>
+  </data>
+  <data name="R5014016" xml:space="preserve">
+    <value>部门编码</value>
+  </data>
+  <data name="R5014018" xml:space="preserve">
+    <value>审批开始</value>
+  </data>
+  <data name="R5014019" xml:space="preserve">
+    <value>审批完成</value>
+  </data>
+  <data name="R5014021" xml:space="preserve">
+    <value>审批草稿</value>
+  </data>
+  <data name="R5014023" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="R5014025" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="R5014026" xml:space="preserve">
+    <value>审批状态</value>
+  </data>
+  <data name="R5014029" xml:space="preserve">
+    <value>主键</value>
+  </data>
+  <data name="R5014030" xml:space="preserve">
+    <value>行号</value>
+  </data>
+  <data name="R5014043" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="R5014051" xml:space="preserve">
+    <value>审批草稿{0}已删除, 不能恢复先前的操作.</value>
+  </data>
+  <data name="R5014052" xml:space="preserve">
+    <value>审批草稿{0}的审批已拒绝!</value>
+  </data>
+  <data name="R5014053" xml:space="preserve">
+    <value>审批草稿{0}已添加为正式批准!</value>
+  </data>
+  <data name="R5014054" xml:space="preserve">
+    <value>审批草稿{0}已撤销审批!</value>
+  </data>
+  <data name="R5014055" xml:space="preserve">
+    <value>审批草稿{0}还没有通过审批, 不能恢复先前的操作!</value>
+  </data>
+  <data name="R5014059" xml:space="preserve">
+    <value>成功恢复记录状态!</value>
+  </data>
+  <data name="R5014065" xml:space="preserve">
+    <value>单据Web化</value>
+  </data>
+  <data name="R5014066" xml:space="preserve">
+    <value>自定义业务</value>
+  </data>
+  <data name="R5014067" xml:space="preserve">
+    <value>整型</value>
+  </data>
+  <data name="R5014068" xml:space="preserve">
+    <value>自增整型</value>
+  </data>
+  <data name="R5014069" xml:space="preserve">
+    <value>数值型</value>
+  </data>
+  <data name="R5014070" xml:space="preserve">
+    <value>日期型</value>
+  </data>
+  <data name="R5014074" xml:space="preserve">
+    <value>一栏</value>
+  </data>
+  <data name="R5014076" xml:space="preserve">
+    <value>等于</value>
+  </data>
+  <data name="R5014079" xml:space="preserve">
+    <value>无</value>
+  </data>
+  <data name="R5014080" xml:space="preserve">
+    <value>单价</value>
+  </data>
+  <data name="R5014081" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="R5014082" xml:space="preserve">
+    <value>比率</value>
+  </data>
+  <data name="R5014083" xml:space="preserve">
+    <value>百分比</value>
+  </data>
+  <data name="R5014084" xml:space="preserve">
+    <value>金额</value>
+  </data>
+  <data name="R5014085" xml:space="preserve">
+    <value>日期时间</value>
+  </data>
+  <data name="R5014086" xml:space="preserve">
+    <value>多行文本</value>
+  </data>
+  <data name="R5014107" xml:space="preserve">
+    <value>审批历程</value>
+  </data>
+  <data name="R5014133" xml:space="preserve">
+    <value>全删全加</value>
+  </data>
+  <data name="R5014134" xml:space="preserve">
+    <value>更新模式</value>
+  </data>
+  <data name="R5014135" xml:space="preserve">
+    <value>普通表</value>
+  </data>
+  <data name="R5014136" xml:space="preserve">
+    <value>费用表</value>
+  </data>
+  <data name="R5014137" xml:space="preserve">
+    <value>收付款方式</value>
+  </data>
+  <data name="R5014142" xml:space="preserve">
+    <value>合计</value>
+  </data>
+  <data name="R5014155" xml:space="preserve">
+    <value>(空)</value>
+  </data>
+  <data name="R5014156" xml:space="preserve">
+    <value>冲销</value>
+  </data>
+  <data name="R5014157" xml:space="preserve">
+    <value>凭证标记</value>
+  </data>
+  <data name="R5014158" xml:space="preserve">
+    <value>凭证确认</value>
+  </data>
+  <data name="R5014163" xml:space="preserve">
+    <value>变更拥有者</value>
+  </data>
+  <data name="R5014164" xml:space="preserve">
+    <value>变更凭证日期</value>
+  </data>
+  <data name="R5014170" xml:space="preserve">
+    <value>(无)</value>
+  </data>
+  <data name="R5014171" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="R5014172" xml:space="preserve">
+    <value>恢复</value>
+  </data>
+  <data name="R5014174" xml:space="preserve">
+    <value>未分类</value>
+  </data>
+  <data name="R5014181" xml:space="preserve">
+    <value>细表</value>
+  </data>
+  <data name="R5014194" xml:space="preserve">
+    <value>表[{0}]的主键超过2个, 多主键尚未支持内嵌文档.</value>
+  </data>
+  <data name="R5014196" xml:space="preserve">
+    <value>控件[{0}]的摆放位置不明确.</value>
+  </data>
+  <data name="R5014201" xml:space="preserve">
+    <value>支票支付</value>
+  </data>
+  <data name="R5014203" xml:space="preserve">
+    <value>现金支付</value>
+  </data>
+  <data name="R5014215" xml:space="preserve">
+    <value>分组</value>
+  </data>
+  <data name="R5014217" xml:space="preserve">
+    <value>比例</value>
+  </data>
+  <data name="R5014222" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="R5014237" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="R5014238" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="R5014239" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="R5014240" xml:space="preserve">
+    <value>周</value>
+  </data>
+  <data name="R5014241" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="R5014247" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="R5014248" xml:space="preserve">
+    <value>供应商</value>
+  </data>
+  <data name="R5014249" xml:space="preserve">
+    <value>员工</value>
+  </data>
+  <data name="R5014250" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="R5014251" xml:space="preserve">
+    <value>工作中心</value>
+  </data>
+  <data name="R5014268" xml:space="preserve">
+    <value>主键重复,已存在主键[{0}]的记录!</value>
+  </data>
+  <data name="R5014269" xml:space="preserve">
+    <value>{0}不能为空!</value>
+  </data>
+  <data name="R5014276" xml:space="preserve">
+    <value>编号与编码规则不匹配!</value>
+  </data>
+  <data name="R5014282" xml:space="preserve">
+    <value>运算</value>
+  </data>
+  <data name="R5014285" xml:space="preserve">
+    <value>我的收藏夹</value>
+  </data>
+  <data name="R5014289" xml:space="preserve">
+    <value>开始执行操作</value>
+  </data>
+  <data name="R5014311" xml:space="preserve">
+    <value>输入参数</value>
+  </data>
+  <data name="R5014312" xml:space="preserve">
+    <value>系统参数</value>
+  </data>
+  <data name="R5014313" xml:space="preserve">
+    <value>固定值</value>
+  </data>
+  <data name="R5014316" xml:space="preserve">
+    <value>行关闭</value>
+  </data>
+  <data name="R5014317" xml:space="preserve">
+    <value>解锁</value>
+  </data>
+  <data name="R5014318" xml:space="preserve">
+    <value>条形码</value>
+  </data>
+  <data name="R5014319" xml:space="preserve">
+    <value>基础资料</value>
+  </data>
+  <data name="R5014320" xml:space="preserve">
+    <value>单据状态</value>
+  </data>
+  <data name="R5014334" xml:space="preserve">
+    <value>已从备份数据库进行恢复!</value>
+  </data>
+  <data name="R5014336" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="R5014337" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="R5014339" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="R5014343" xml:space="preserve">
+    <value>居中</value>
+  </data>
+  <data name="R5014347" xml:space="preserve">
+    <value>布尔型</value>
+  </data>
+  <data name="R5014361" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="R5014382" xml:space="preserve">
+    <value>分拆</value>
+  </data>
+  <data name="R5014386" xml:space="preserve">
+    <value>错误的表达式</value>
+  </data>
+  <data name="R5014389" xml:space="preserve">
+    <value>请输入必填参数</value>
+  </data>
+  <data name="R5014406" xml:space="preserve">
+    <value>所有用户</value>
+  </data>
+  <data name="R5014407" xml:space="preserve">
+    <value>所有岗位</value>
+  </data>
+  <data name="R5014413" xml:space="preserve">
+    <value>当前没有数据,无法修改数据</value>
+  </data>
+  <data name="R5014416" xml:space="preserve">
+    <value>当前查询方案为非共享的, 请选择其他方案!</value>
+  </data>
+  <data name="R5014420" xml:space="preserve">
+    <value>数据未找到!</value>
+  </data>
+  <data name="R5014425" xml:space="preserve">
+    <value>当前没有数据,无法添加数据</value>
+  </data>
+  <data name="R5014431" xml:space="preserve">
+    <value>自定义查询</value>
+  </data>
+  <data name="R5014432" xml:space="preserve">
+    <value>消息</value>
+  </data>
+  <data name="R5014433" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="R5014434" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="R5019312" xml:space="preserve">
+    <value>阶段</value>
+  </data>
+</root>
