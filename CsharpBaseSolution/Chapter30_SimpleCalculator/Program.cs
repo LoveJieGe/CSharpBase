@@ -13,18 +13,26 @@ namespace Chapter30_SimpleCalculator
     {
         [Import]
         private ICalculator Calculator { get; set; }
+        [Import]
+        private IProcessor Processor { get; set; }
         static void Main(string[] args)
         {
             var p = new Program();
-            p.Run();
-           
+            p.MyComposePart();
+            p.Processor.Send();
+            //p.Run();
+            Console.Read();
+        }
+        void MyComposePart()
+        {
+            var catalog = new AssemblyCatalog(Assembly.GetExecutingAssembly());
+            var container = new CompositionContainer(catalog);
+            container.ComposeParts(this);
         }
         public void Run()
         {
-            var catalog = new AssemblyCatalog(Assembly.GetCallingAssembly());
-            var container = new CompositionContainer(catalog);
-            container.ComposeParts(this);
-           IList<IOperation> operations =  Calculator.GetOperations();
+           
+            IList<IOperation> operations =  Calculator.GetOperations();
             var operationDict = new SortedList<string, IOperation>();
             foreach(IOperation item in operations)
             {

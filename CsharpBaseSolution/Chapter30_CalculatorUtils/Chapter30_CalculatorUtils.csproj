@@ -4,15 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B14F5E29-8128-4E1E-8E5B-5ACB8FE526D7}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Chapter30_SimpleCalculator</RootNamespace>
-    <AssemblyName>Chapter30_SimpleCalculator</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectGuid>{F86C424F-5C46-4982-BBA6-804317696557}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chapter30_CalculatorUtils</RootNamespace>
+    <AssemblyName>Chapter30_CalculatorUtils</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,17 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="ICalculator.cs" />
-    <Compile Include="IOperation.cs" />
-    <Compile Include="MessageSender.cs" />
-    <Compile Include="Operation.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="BindableBase.cs" />
+    <Compile Include="CalculatorExtensionExportAttribute.cs" />
+    <Compile Include="ImportEventArgs.cs" />
+    <Compile Include="ISpeedCapabilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpeedExportAttribute.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
