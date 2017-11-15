@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -52,9 +53,32 @@ namespace WPFCalculator
 
         public Task InitializeOperationAsync()
         {
-            throw new NotImplementedException();
+            //Contract.Requires(calcImport != null);
+            //Contract.Requires(calcExtensionImport != null);
+            if (calcImport == null)
+                throw new ArgumentException("calcImportant为空");
+            if (calcExtensionImport == null)
+                throw new ArgumentException("calcExtensionImport为空");
+            return Task.Run(() =>
+            {
+                var operations = calcImport.Calculature.Value.GetOperations();
+                lock(viewModel.syncCalcAddInOperator)
+                {
+                    viewModel.CalcAddInOperator.Clear();
+                    foreach(var item in operations )
+                    {
+                        viewModel.CalcAddInOperator.Add(item);
+                    }
+                }
+            });
         }
-
+        /// <summary>
+        /// 根据lazy类型导入计算器扩展部件
+        /// </summary>
+        public void RefreshExtension()
+        {
+            
+        }
         public void Dispose()
         {
             throw new NotImplementedException();
