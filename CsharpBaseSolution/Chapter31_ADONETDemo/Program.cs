@@ -18,7 +18,9 @@ namespace Chapter31_ADONETDemo
         static void Main(string[] args)
         {
             //WithResultProc();
-            Task t = GetCounts();
+            //Task t = GetCounts();
+            DataSet xmlRead = SqlHelper.ReadXml("config.xml");
+            DataTable table = xmlRead.Tables[0];
             Console.Read();
         }
         public async static Task GetCounts()
