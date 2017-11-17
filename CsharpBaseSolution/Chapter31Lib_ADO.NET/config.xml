@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <System description="系统配置">
+    <Services description="服务配置">
+      <ObjectDatabaseServices description="嵌入式对象数据库服务">
+        <Item name="DatabaseFileDirectory"></Item>
+      </ObjectDatabaseServices>
+      <MembershipServices description="用户管理">
+        <Item name="Component">Pushsoft.Erp.Membership.MembershipService,Membership</Item>
+      </MembershipServices>
+      <SecurityProvider description="权限实现">
+        <Item name="Component">Pushsoft.Erp.Common.SecurityProvider,Common</Item>
+      </SecurityProvider>
+      <InitializeServer description="服务器初始化">
+        <Item name="Component">Pushsoft.Erp.DataCommon.ServerInitialize,DataCommon</Item>
+      </InitializeServer>
+      <InitializeProvider description="服务初始化支持">
+        <Item name="System">Pushsoft.Erp.DataCommon.InitSystemRegister,DataCommon</Item>
+        <Item name="Database">Pushsoft.Erp.DataCommon.InitDatabaseRegister,DataCommon</Item>
+        <Item name="Config">Pushsoft.Erp.DataCommon.InitConfigRegister,DataCommon</Item>
+        <Item name="Mail">Pushsoft.Erp.OA.InitMailRegister,OA</Item>
+        <Item name="Source">Pushsoft.Erp.Items.InitSourceRegister,Items</Item>
+        <Item name="Batch">Pushsoft.Erp.Business.InitBatchRegister,Business</Item>
+        <Item name="Formula">Pushsoft.Erp.General.InitFormulaRegister,General</Item>
+        <Item name="NetConfig">Pushsoft.Erp.DataCommon.NetConfigRegister,DataCommon</Item>
+        <Item name="Manufactures">Pushsoft.Erp.Manufactures.InitManuRegister,Manufactures</Item>
+        <Item name="Financial">Pushsoft.Erp.Financial.InitFinancialRegister,Financial</Item>
+      </InitializeProvider>
+      <SessionServices description="会话服务">
+        <Item name="Timeout">36000</Item>
+        <Item name="TimeoutCheckSpan">1000</Item>
+      </SessionServices>
+      <InterfaceServices description="业务服务">
+        <Item name="AgileCore">ICore</Item>
+        <Item name="AgileSupply">ISupply</Item>
+        <Item name="AgileBasic">IBasic</Item>
+        <Item name="AgileBusiness">IBusiness</Item>
+        <Item name="AgileFinancial">IFinancial</Item>
+      </InterfaceServices>
+      <BLLServices description="业务服务">
+        <Item name="DataCommon">Pushsoft.Erp.DataCommon,DataCommon</Item>
+        <Item name="Membership">Pushsoft.Erp.Membership,Membership</Item>
+        <Item name="OA">Pushsoft.Erp.OA,OA</Item>
+        <Item name="Print">Pushsoft.Erp.Print,Print</Item>
+        <Item name="Query">Pushsoft.Erp.Query,Query</Item>
+        <Item name="Report">Pushsoft.Erp.Report,Report</Item>
+        <Item name="Workflow">Pushsoft.Erp.Workflow,Workflow</Item>
+        <Item name="Facility">Pushsoft.Erp.Facility,Facility</Item>
+        <Item name="Admins">Pushsoft.Erp.Admins,Admins</Item>
+        <Item name="Employees">Pushsoft.Erp.Employees,Employees</Item>
+        <Item name="Cards">Pushsoft.Erp.Cards,Cards</Item>
+        <Item name="Items">Pushsoft.Erp.Items,Items</Item>
+        <Item name="General">Pushsoft.Erp.General,General</Item>
+        <Item name="SiteCommon">Pushsoft.Erp.SiteCommon,SiteCommon</Item>
+        <Item name="Crm">Pushsoft.Erp.Crm,Crm</Item>
+        <Item name="Business">Pushsoft.Erp.Business,Business</Item>
+        <Item name="BusinessSupport">Pushsoft.Erp.BusinessSupport,BusinessSupport</Item>
+        <Item name="Purchases">Pushsoft.Erp.Purchases,Purchases</Item>
+        <Item name="Sales">Pushsoft.Erp.Sales,Sales</Item>
+        <Item name="Warehouses">Pushsoft.Erp.Warehouses,Warehouses</Item>
+        <Item name="Manufactures">Pushsoft.Erp.Manufactures,Manufactures</Item>
+        <Item name="Cost">Pushsoft.Erp.Cost,Cost</Item>
+        <Item name="APAR">Pushsoft.Erp.APAR,APAR</Item>
+        <Item name="Quality">Pushsoft.Erp.Quality,Quality</Item>
+	<Item name="Financial">Pushsoft.Erp.Financial,Financial</Item>
+        <Item name="Assets">Pushsoft.Erp.Assets,Assets</Item>
+      </BLLServices>
+      <SessionStateServices description="会话服务">
+        <Item name="Component">Pushsoft.Framework.Server.ISessionState,CommonComponent</Item>
+      </SessionStateServices>
+    </Services>
+  </System>
+</config>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.Common;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,12 @@ namespace Chapter31Lib_ADO.NET
             DbCommand cmd = factory.CreateCommand();
             cmd.Connection = conn;
             return cmd;
+        }
+        public static DataSet ReadXml(string xmlName)
+        {
+            DataSet set = new DataSet();
+             set.ReadXml(xmlName);
+            return set;
         }
     }
 }
