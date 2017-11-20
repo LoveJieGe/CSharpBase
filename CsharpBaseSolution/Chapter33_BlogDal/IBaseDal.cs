@@ -9,11 +9,12 @@ namespace Chapter33_BlogDal
 {
     public interface IBaseDal<T>where T:class,new ()
     {
-        T GetEntity(Expression<Func<T, bool>> whereLambda);
-        IEnumerable<T> GetEntities(Expression<Func<T, bool>> whereLambda);
+        T GetEntity(Expression<Func<T, bool>> whereLambda=null);
+        IEnumerable<T> GetEntities(Expression<Func<T, bool>> whereLambda=null);
         void InsertEntity(T entity);
         void UpdateEntity(T entity);
         void DeleteEntity(T entity);
         long Count();
+        void SaveChange();
     }
 }

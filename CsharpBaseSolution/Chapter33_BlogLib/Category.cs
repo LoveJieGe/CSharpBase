@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace Chapter33_BlogLib
         public int CategoryID { get; set; }
         [Required]
         [StringLength(80)]
+        [DisplayName("分类名称")]
         public string CateGoryName { get; set; }
 
         public ICollection<Blog> Blogs { get; set; }
