@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Chapter33_BlogLib.Category>
+@{
+    ViewBag.Title = "分类列表";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>分类列表</h2>
+
+<table>
+    <tr>
+        <th>@Html.DisplayNameFor(model=>model.CateGoryName)</th>
+        <th>@Html.ActionLink("新增分类","Create")</th>
+    </tr>
+    @foreach(Chapter33_BlogLib.Category item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modeItem=>item.CateGoryName)</td>
+            <td>@Html.ActionLink("删除","Delete",new {id=item.CategoryID })</td>
+        </tr>
+    }
+</table>
+

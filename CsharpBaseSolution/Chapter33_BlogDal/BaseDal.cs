@@ -22,13 +22,13 @@ namespace Chapter33_BlogDal
         {
             return _dbSet.FirstOrDefault(whereLambda);
         }
-        public IEnumerable<T> GetEntities(Expression<Func<T, bool>> whereLambda)
+        public IEnumerable<T> GetEntities(Expression<Func<T, bool>> whereLambda=null)
         {
             if(whereLambda==null)
             {
                 return _dbSet.AsEnumerable();
             }
-            return _dbSet.Where(whereLambda);
+            return _dbSet.Where(whereLambda).AsEnumerable();
         }
         public void InsertEntity(T entity)
         {
