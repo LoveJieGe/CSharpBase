@@ -15,7 +15,10 @@ namespace Chapter34_XmlReader
             //ReadXml();
             //WriteXml();
             //XMLDocument();
-            WriteXmlDocument();
+            //WriteXmlDocument();
+            //XPathRead();
+            //XPathEvaluate();
+            AddElement();
             Console.Read();
         }
         static void ReadXml()
@@ -93,7 +96,11 @@ namespace Chapter34_XmlReader
         static void WriteXmlDocument()
         {
             XmlDocument doc = new XmlDocument();
-            doc.Load("newbook.xml");
+            //XmlDeclaration declaration = doc.CreateXmlDeclaration("1.0", null, null);
+            //doc.AppendChild(declaration);
+            //XmlElement rootElement = doc.CreateElement("bookstore");
+            //doc.AppendChild(rootElement);
+            doc.Load("booksEdit.xml");
             XmlElement newbook = doc.CreateElement("book2");
             newbook.SetAttribute("genre2", "Mystery");
             newbook.SetAttribute("publicationdate2", "2001");
@@ -128,12 +135,51 @@ namespace Chapter34_XmlReader
             XPathDocument doc = new XPathDocument("booksEdit.xml");
             //创建XPath navigator
             XPathNavigator nav = doc.CreateNavigator();
-            XPathNodeIterator iter =  nav.Select("/bookstore/book[@genre='Mystery']");
+            XPathNodeIterator iter =  nav.Select("/bookstore/book2[@genre2='Mystery']");
             while(iter.MoveNext())
             {
-                //XPathNodeIterator iter.Current.SelectDescendants(XPathNodeType.Element, false);
+                XPathNodeIterator newIter = iter.Current.SelectDescendants(XPathNodeType.Element, false);
+                while(newIter.MoveNext())
+                {
+                    Console.WriteLine(newIter.Current.Name + "\r\n");
+                }
             }
+        }
 
+        static void XPathEvaluate()
+        {
+            XPathDocument xPath = new XPathDocument("booksEdit.xml");
+            XPathNavigator navigator = xPath.CreateNavigator();
+            XPathNodeIterator iter = navigator.Select("/bookstore/book2");
+            while(iter.MoveNext())
+            {
+                XPathNodeIterator newIter = iter.Current.SelectDescendants(XPathNodeType.Element, false);
+                while(newIter.MoveNext())
+                {
+                    if(!newIter.Current.MoveToChild(XPathNodeType.Element))
+                    Console.WriteLine(newIter.Current.Name + ":" + newIter.Current.Value + "\r\n");    
+                }
+            }
+            Console.WriteLine("--------------------");
+            Console.WriteLine("总金额：" + navigator.Evaluate("sum(/bookstore/book2/price)"));
+        }
+        /// <summary>
+        /// 添加折扣节点  
+        /// </summary>
+        static void AddElement()
+        {
+            XmlDocument doc=  new XmlDocument();
+            doc.Load("booksEdit.xml");
+            XPathNavigator nav = doc.CreateNavigator();
+            if(nav.CanEdit)
+            {
+                XPathNodeIterator iter = nav.Select("/bookstore/book2/price");
+                while (iter.MoveNext())
+                {
+                    iter.Current.InsertAfter("<disc>0.5</disc>");
+                }
+            }
+            doc.Save("newbooksEdit.xml");
         }
     }
 }
