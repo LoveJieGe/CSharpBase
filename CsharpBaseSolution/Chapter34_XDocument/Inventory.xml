@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Inventory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product DisCount="5">
+    <ProductID>200</ProductID>
+    <ProductName>茶杯</ProductName>
+    <QuantityPerUnit>6</QuantityPerUnit>
+    <CategoryID>100</CategoryID>
+    <UnitPrice>20</UnitPrice>
+    <UnitsInStock>5</UnitsInStock>
+    <Discontinued>true</Discontinued>
+  </Product>
+  <Book DisCount="5">
+    <ProductID>200</ProductID>
+    <ProductName>茶杯2</ProductName>
+    <QuantityPerUnit>6</QuantityPerUnit>
+    <CategoryID>100</CategoryID>
+    <UnitPrice>20</UnitPrice>
+    <UnitsInStock>5</UnitsInStock>
+    <Discontinued>true</Discontinued>
+    <ISBN>1234567890</ISBN>
+  </Book>
+</Inventory>

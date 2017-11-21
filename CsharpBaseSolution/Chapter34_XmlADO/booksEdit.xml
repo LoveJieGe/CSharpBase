@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookstore>
+  <book genre="Mystery" publicationdate="2001" ISBN="1234567890">
+    <title>书的名字</title>
+    <author>
+      <name>我的</name>
+    </author>
+    <price>21</price>
+  </book>
+  <book genre2="Mystery" publicationdate2="2001" ISBN2="1234567890">
+    <title>书的名字2</title>
+    <author>
+      <name>我的2</name>
+    </author>
+    <price>21</price>
+  </book>
+</bookstore>
