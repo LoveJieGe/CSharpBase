@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter10_Collection", "Chapter10_Collection\Chapter10_Collection.csproj", "{037A4750-E4D1-42A7-91F1-FCFBBA265A76}"
 EndProject
@@ -97,7 +97,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter31Lib_ADO.NET", "Cha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter31_ADONETDemo", "Chapter31_ADONETDemo\Chapter31_ADONETDemo.csproj", "{BF3526B7-2A10-408D-A739-A59951DA0358}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter33", "Chapter33", "{FE3171D6-309F-4B4E-AA8E-6035A15B5F71}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter33_EF", "Chapter33_EF", "{FE3171D6-309F-4B4E-AA8E-6035A15B5F71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstApp", "CodeFirstApp\CodeFirstApp.csproj", "{E438ADD8-215A-4130-99AB-D92CAB3ABFD8}"
 EndProject
@@ -117,13 +117,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter33_BlogDal", "Chapte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter33_BlogWep", "Chapter33_BlogWep\Chapter33_BlogWep.csproj", "{610E50AF-43F3-41B9-B6F6-E590B1C4BE70}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter34", "Chapter34", "{19C8A9B1-441D-438F-83E1-99F96A218920}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter34_Xml", "Chapter34_Xml", "{19C8A9B1-441D-438F-83E1-99F96A218920}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter34_XmlReader", "Chapter34_XmlReader\Chapter34_XmlReader.csproj", "{EBD0F326-CAE1-447F-911A-783FA8DB78D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter34_XmlADO", "Chapter34_XmlADO\Chapter34_XmlADO.csproj", "{F2DA08A9-A257-4AFB-83E4-1AE65BAA56BB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter34_XDocument", "Chapter34_XDocument\Chapter34_XDocument.csproj", "{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter34_LinqToXml", "Chapter34_LinqToXml\Chapter34_LinqToXml.csproj", "{630D59BF-6DFE-4253-B848-F177D2003224}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter35_Wpf", "Chapter35_Wpf", "{99C6C5EE-6CB3-4BB4-A13D-44DAA252BEC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter35_ShapesDemo", "Chapter35_ShapesDemo\Chapter35_ShapesDemo.csproj", "{3D934CA9-9FCE-451B-BC0D-5C006A62584D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -311,6 +317,14 @@ Global
 		{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{630D59BF-6DFE-4253-B848-F177D2003224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630D59BF-6DFE-4253-B848-F177D2003224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630D59BF-6DFE-4253-B848-F177D2003224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630D59BF-6DFE-4253-B848-F177D2003224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D934CA9-9FCE-451B-BC0D-5C006A62584D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D934CA9-9FCE-451B-BC0D-5C006A62584D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D934CA9-9FCE-451B-BC0D-5C006A62584D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D934CA9-9FCE-451B-BC0D-5C006A62584D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -361,6 +375,8 @@ Global
 		{EBD0F326-CAE1-447F-911A-783FA8DB78D1} = {19C8A9B1-441D-438F-83E1-99F96A218920}
 		{F2DA08A9-A257-4AFB-83E4-1AE65BAA56BB} = {19C8A9B1-441D-438F-83E1-99F96A218920}
 		{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D} = {19C8A9B1-441D-438F-83E1-99F96A218920}
+		{630D59BF-6DFE-4253-B848-F177D2003224} = {19C8A9B1-441D-438F-83E1-99F96A218920}
+		{3D934CA9-9FCE-451B-BC0D-5C006A62584D} = {99C6C5EE-6CB3-4BB4-A13D-44DAA252BEC9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06541DBD-409B-460C-B4F8-ECB891CD385C}
