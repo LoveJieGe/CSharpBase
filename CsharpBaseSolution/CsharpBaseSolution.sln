@@ -125,6 +125,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter34_XmlADO", "Chapter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter34_XDocument", "Chapter34_XDocument\Chapter34_XDocument.csproj", "{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other_AOP", "Other_AOP", "{316D1E80-7F70-4B1A-AFC7-1095DCED3410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterceptorDemo", "InterceptorDemo\InterceptorDemo.csproj", "{2218BD57-1E7F-4D49-99C9-9E5E6E3AA875}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -311,6 +315,10 @@ Global
 		{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2218BD57-1E7F-4D49-99C9-9E5E6E3AA875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2218BD57-1E7F-4D49-99C9-9E5E6E3AA875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2218BD57-1E7F-4D49-99C9-9E5E6E3AA875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2218BD57-1E7F-4D49-99C9-9E5E6E3AA875}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -361,6 +369,7 @@ Global
 		{EBD0F326-CAE1-447F-911A-783FA8DB78D1} = {19C8A9B1-441D-438F-83E1-99F96A218920}
 		{F2DA08A9-A257-4AFB-83E4-1AE65BAA56BB} = {19C8A9B1-441D-438F-83E1-99F96A218920}
 		{800F15A1-680E-4BBA-8DD6-5476FCF7DB3D} = {19C8A9B1-441D-438F-83E1-99F96A218920}
+		{2218BD57-1E7F-4D49-99C9-9E5E6E3AA875} = {316D1E80-7F70-4B1A-AFC7-1095DCED3410}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06541DBD-409B-460C-B4F8-ECB891CD385C}

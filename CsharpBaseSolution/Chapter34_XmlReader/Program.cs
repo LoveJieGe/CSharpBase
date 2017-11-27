@@ -13,12 +13,12 @@ namespace Chapter34_XmlReader
         static void Main(string[] args)
         {
             //ReadXml();
-            //WriteXml();
+            WriteXml();
             //XMLDocument();
             //WriteXmlDocument();
             //XPathRead();
             //XPathEvaluate();
-            AddElement();
+            //AddElement();
             Console.Read();
         }
         static void ReadXml()
@@ -63,10 +63,12 @@ namespace Chapter34_XmlReader
         {
             XmlWriterSettings setting = new XmlWriterSettings();
             setting.Indent = true;
+            //设置缩进字符，使用空格、制表符、回车符或换行符。 默认值为两个空格。
             setting.IndentChars = "\t";
             setting.NewLineOnAttributes = true;
             XmlWriter writer = XmlWriter.Create("newbook.xml", setting);
             writer.WriteStartDocument();
+            writer.WriteComment("这是一本书的Xml文档 ");
             writer.WriteStartElement("book");
             writer.WriteAttributeString("genre", "Mystery");
             writer.WriteAttributeString("publicationdate", "2001");
