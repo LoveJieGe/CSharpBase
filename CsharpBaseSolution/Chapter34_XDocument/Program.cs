@@ -48,7 +48,8 @@ namespace Chapter34_XDocument
                 new XComment("内部注释"),
                 new XElement("Country", "中国"));
             xdoc.Add(xe);
-            Console.WriteLine(xdoc.ToString());
+            xdoc.Save(Console.Out);
+            //Console.WriteLine(xdoc.ToString());
         }
 
         static void QueryData()
