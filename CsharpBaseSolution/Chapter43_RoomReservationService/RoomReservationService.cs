@@ -4,18 +4,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Chapter43_RoomReservationService
 {
-    [ServiceBehavior(IncludeExceptionDetailInFaults =true)]
+    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
     public class RoomReservationService : IRoomService
     {
-        public RoomReservaton[] GetRoomReservaton(DateTime fromDatetime, DateTime toDatetime)
+        [WebGet(UriTemplate = "Reservations?From={fromTime}&To={toTime}")]
+        public RoomReservaton[] GetRoomReservaton(DateTime fromTime, DateTime toTime)
         {
             RoomReservationData data = new RoomReservationData();
-            return data.GetRoomReservaton(fromDatetime, toDatetime);
+            return data.GetRoomReservaton(fromTime, toTime);
         }
 
         public bool ReserveRoom(RoomReservaton roomReservaton)
