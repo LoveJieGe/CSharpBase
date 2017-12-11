@@ -2,7 +2,7 @@
 <Inventory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Product DisCount="5">
     <ProductID>200</ProductID>
-    <ProductName>茶杯</ProductName>
+    <ProductName>悲惨世界</ProductName>
     <QuantityPerUnit>6</QuantityPerUnit>
     <CategoryID>100</CategoryID>
     <UnitPrice>20</UnitPrice>
@@ -11,7 +11,7 @@
   </Product>
   <Book DisCount="5">
     <ProductID>200</ProductID>
-    <ProductName>茶杯2</ProductName>
+    <ProductName>挪威的森林</ProductName>
     <QuantityPerUnit>6</QuantityPerUnit>
     <CategoryID>100</CategoryID>
     <UnitPrice>20</UnitPrice>
