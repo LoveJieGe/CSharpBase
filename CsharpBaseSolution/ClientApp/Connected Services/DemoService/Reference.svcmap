@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a3c790e8-c095-4fca-8024-991f9bda8fba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/DemoService/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ee8e20a3-01e2-4b0f-9eaa-8adfdd277b20" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DemoService/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="8bfef562-4af3-4132-9d1a-15cecc5c1df6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DemoService/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="f6e24f4d-62ea-4670-9882-5cb4c4713545" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DemoService/Service1/mex" />
+    <MetadataFile FileName="DemoService.xsd" MetadataType="Schema" ID="78188b43-05f4-4f0a-987e-621a43d9246d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/DemoService/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
