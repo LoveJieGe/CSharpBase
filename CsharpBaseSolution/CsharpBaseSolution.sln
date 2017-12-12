@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter10_Collection", "Chapter10_Collection\Chapter10_Collection.csproj", "{037A4750-E4D1-42A7-91F1-FCFBBA265A76}"
 EndProject
@@ -192,6 +192,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithQueues", "WorkingWithQueues", "{A56469F4-DC2D-4BF4-891F-E42D47304536}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateMessageQueue", "CreateMessageQueue\CreateMessageQueue.csproj", "{90D5B231-D560-48AB-A93E-9E09BB7E9222}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CourseOrderApplication", "CourseOrderApplication", "{AC084FA6-6AA9-403E-98FC-ACC37ADC4FD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseOrder", "CourseOrder\CourseOrder.csproj", "{981E0623-FCE0-48F8-90E8-8DDE65AF0A79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -467,6 +471,10 @@ Global
 		{90D5B231-D560-48AB-A93E-9E09BB7E9222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D5B231-D560-48AB-A93E-9E09BB7E9222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D5B231-D560-48AB-A93E-9E09BB7E9222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981E0623-FCE0-48F8-90E8-8DDE65AF0A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981E0623-FCE0-48F8-90E8-8DDE65AF0A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981E0623-FCE0-48F8-90E8-8DDE65AF0A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981E0623-FCE0-48F8-90E8-8DDE65AF0A79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -544,6 +552,8 @@ Global
 		{29A9B46F-D2A8-4D46-8FAA-63E962D7AB4C} = {0D48CE89-7B4D-41D1-9F76-47BFCC329E28}
 		{A56469F4-DC2D-4BF4-891F-E42D47304536} = {511E3C34-7E7F-47DC-B106-77FAD8BC97B0}
 		{90D5B231-D560-48AB-A93E-9E09BB7E9222} = {A56469F4-DC2D-4BF4-891F-E42D47304536}
+		{AC084FA6-6AA9-403E-98FC-ACC37ADC4FD4} = {511E3C34-7E7F-47DC-B106-77FAD8BC97B0}
+		{981E0623-FCE0-48F8-90E8-8DDE65AF0A79} = {AC084FA6-6AA9-403E-98FC-ACC37ADC4FD4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {06541DBD-409B-460C-B4F8-ECB891CD385C}
