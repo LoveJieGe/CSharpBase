@@ -1,0 +1,38 @@
+﻿<Window x:Class="CourseOrderSenderWcf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseOrderSenderWcf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="500">
+    <Window.Resources>
+        <Style x:Key="Style">
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.Margin" Value="5"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Label}" BasedOn="{StaticResource Style}"></Style>
+        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource Style}"></Style>
+        <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource Style}"></Style>
+        <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource Style}"></Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0">课程:</Label>
+        <Label Grid.Row="1" Grid.Column="0">公司:</Label>
+        <Label Grid.Row="2" Grid.Column="0">联系人:</Label>
+        <ComboBox Grid.Row="0" Grid.Column="1" ItemsSource="{Binding Courses}" SelectedItem="{Binding CourseOrder.Course.Title}" ></ComboBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding CourseOrder.Customer.Company}"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding CourseOrder.Customer.Contract}"></TextBox>
+        <Button Grid.Row="3" Grid.Column="1" Content="提交" Width="100" Height="30" Click="Button_Click"></Button>
+    </Grid>
+</Window>
