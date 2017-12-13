@@ -4,10 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourseOrder
+namespace ProCSharp.Messaging
 {
     public class CourseOrder:BindableBase
     {
+        public const string CourseOrderQueueName = @".\Private$\MyNewPublicQueue";
+
+        public CourseOrder()
+        {
+            customer = new Customer();
+            course = new Course();
+        }
         private Customer customer;
         public Customer Customer
         {

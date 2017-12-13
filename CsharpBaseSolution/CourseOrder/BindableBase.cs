@@ -6,13 +6,13 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourseOrder
+namespace ProCSharp.Messaging
 {
     public abstract class BindableBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        internal void SetProperty<T>(ref T prop,T value,[CallerMemberName] string propertyName="" )
+        protected void SetProperty<T>(ref T prop,T value,[CallerMemberName] string propertyName="" )
         {
             if (!EqualityComparer<T>.Default.Equals(prop, value))
             {
