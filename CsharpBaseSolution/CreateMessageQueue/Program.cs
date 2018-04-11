@@ -13,6 +13,7 @@ namespace CreateMessageQueue
         {
             CreateQueue();
             Console.Read();
+
         }
 
         private static void CreateQueue()
