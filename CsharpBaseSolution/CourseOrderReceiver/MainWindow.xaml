@@ -1,0 +1,55 @@
+﻿<Window x:Class="CourseOrderReceiver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseOrderReceiver"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="350">
+    <Window.Resources>
+        <Style x:Key="Style1">
+            <Setter Property="Control.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Control.Margin" Value="5"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Label }" BasedOn="{StaticResource Style1}"></Style>
+        <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource Style1}"></Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="序列:"></Label>
+            <ListBox x:Name="listOrders" Grid.Row="1" ItemsSource="{Binding OrderList}" SelectionChanged="listOrders_SelectionChanged" ></ListBox>
+        </Grid>
+        <GridSplitter Grid.Column="1" HorizontalAlignment="Left" Width="3"></GridSplitter>
+        <Grid Grid.Column="1" IsEnabled="True" DataContext="{Binding SelectedCourseInfo}">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" >课程: </Label>
+            <Label Grid.Row="1" Grid.Column="0" >公司:</Label>
+            <Label Grid.Row="2" Grid.Column="0" >联系人:</Label>
+            <Label Grid.Row="3" Grid.Column="0" >高优先级:</Label>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Course}"></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Company}"></TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Contract}"></TextBlock>
+            <CheckBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Width="50" IsEnabled="False" IsChecked="{Binding HighVisibility}"></CheckBox>
+            <!--<TextBlock Grid.Row="3" Grid.Column="1" Text="优先级高" Visibility="{Binding HighVisibility}"></TextBlock>-->
+            <Button Grid.Row="4" Grid.Column="1" Width="100" Height="30" Content="处理订单" IsEnabled="{Binding EnableProcess}" Click="Button_Click"></Button>
+        </Grid> 
+    </Grid>
+</Window>

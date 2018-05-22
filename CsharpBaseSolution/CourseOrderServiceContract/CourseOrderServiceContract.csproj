@@ -5,27 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F4C01313-0900-4D1B-862D-DD3791645332}</ProjectGuid>
+    <ProjectGuid>{3231660D-04AB-4E20-8849-7CF112A39A23}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DemoService</RootNamespace>
-    <AssemblyName>DemoService</AssemblyName>
+    <RootNamespace>CourseOrderServiceContract</RootNamespace>
+    <AssemblyName>CourseOrderServiceContract</AssemblyName>
     <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <XsdCodeGenEnabled>True</XsdCodeGenEnabled>
-    <XsdCodeGenSerializerMode>XmlSerializer</XsdCodeGenSerializerMode>
-    <XsdCodeGenReuseTypesFlag>True</XsdCodeGenReuseTypesFlag>
-    <XsdCodeGenReuseTypesMode>All</XsdCodeGenReuseTypesMode>
-    <XsdCodeGenReferences />
-    <XsdCodeGenNamespaceMappings>%2a, DemoService.ContractTypes</XsdCodeGenNamespaceMappings>
-    <XsdCodeGenCollectionTypes>System.Array%3bSystem.Collections.Generic.Dictionary`2</XsdCodeGenCollectionTypes>
-    <XsdCodeGenExcludedTypes />
-    <XsdCodeGenImportXmlTypes>True</XsdCodeGenImportXmlTypes>
-    <XsdCodeGenGenerateSerializableTypes>True</XsdCodeGenGenerateSerializableTypes>
-    <XsdCodeGenGenerateInternalTypes>False</XsdCodeGenGenerateInternalTypes>
-    <XsdCodeGenEnableDataBinding>False</XsdCodeGenEnableDataBinding>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,12 +44,18 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IDemoService.cs" />
+    <Compile Include="ICourseOrderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DemoService.cs" />
+    <Compile Include="CourseOrderService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CourseOrderWcf\CourseOrderWcf.csproj">
+      <Project>{c894b85c-b5a8-48c2-a6ad-05597a5bc1ab}</Project>
+      <Name>CourseOrderWcf</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -73,7 +68,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
         <WcfProjectProperties>
-          <AutoStart>False</AutoStart>
+          <AutoStart>True</AutoStart>
         </WcfProjectProperties>
       </FlavorProperties>
     </VisualStudio>

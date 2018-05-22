@@ -1,0 +1,57 @@
+﻿<Window x:Class="CourseOrderReceiverWcf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseOrderReceiverWcf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style x:Key="Style1">
+            <Setter Property="Control.VerticalAlignment" Value="Center"> </Setter>
+            <Setter Property="Control.Margin" Value="5"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource Style1}"></Style>
+        <Style TargetType="{x:Type Label}" BasedOn="{StaticResource Style1}"></Style>
+        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource Style1}"></Style>
+    </Window.Resources>
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="课程列表:"></Label>
+            <ListBox Name="listOrders" Grid.Row="1" ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True"></ListBox>
+        </Grid>
+        <GridSplitter Grid.Column="1" HorizontalAlignment="Left" Width="3"></GridSplitter>
+        <Grid Grid.Column="1" IsEnabled="True" >
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="课程:"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="公司:"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="联系人:"/>
+            <TextBlock Text="{Binding Course.Title}" Grid.Row="0" Grid.Column="1" />
+            <TextBlock Text="{Binding Customer.Company}" Grid.Row="1" Grid.Column="1" />
+            <TextBlock Text="{Binding Customer.Contact}" Grid.Row="2" Grid.Column="1" />
+            <TextBlock Grid.Row="3" Grid.Column="1" Text="高优先级" Visibility="{Binding HighPriority}"/>
+            <Button x:Name="buttonProcessOrder" Grid.Row="4" Grid.Column="1" Content="处理订单" IsEnabled="{Binding EnableProcessing}" Click="buttonProcessOrder_Click"/>
+        </Grid>
+
+
+    </Grid>
+</Window>
