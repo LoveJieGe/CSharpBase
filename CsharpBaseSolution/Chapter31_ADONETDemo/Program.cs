@@ -5,6 +5,8 @@ using System.Configuration;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,10 +21,22 @@ namespace Chapter31_ADONETDemo
         {
             //WithResultProc();
             //Task t = GetCounts();
-            DataSet xmlRead = SqlHelper.ReadXml("config.xml");
-            DataTable table = xmlRead.Tables[0];
+            //DataSet xmlRead = SqlHelper.ReadXml("config.xml");
+            //DataTable table = xmlRead.Tables[0];
+            //Test.Test1();
+            //Console.WriteLine(default(int?));
+            //Color c = Color.FromArgb(50 ,135, 206, 250);
+            //Console.WriteLine(c.ToString());
+            //string path = @"C:\Users\songtaojie\Downloads\总分类账_20180522_130542.xls";
+            string path = @"C:\Users\songtaojie\Downloads\总分类账_20180522_160534.xls"; 
+            XmlDocument doc = Export.LoadXml(path);
+            //XmlDocument doc = Export.ExcelToXml(path);
+            //Export.ConvertExcel(path);
+            Console.WriteLine(1111);
             Console.Read();
         }
+        
+      
         public async static Task GetCounts()
         {
             int count2 = await GetCount2();
