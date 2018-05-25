@@ -52,12 +52,6 @@
     <Compile Include="RoomReservationData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Chapter43_RoomReservationContracts\Chapter43_RoomReservationContracts.csproj">
-      <Project>{e6aa24bd-d486-4e6b-a553-c8a86061558c}</Project>
-      <Name>Chapter43_RoomReservationContracts</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
