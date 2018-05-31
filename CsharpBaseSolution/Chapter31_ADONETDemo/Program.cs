@@ -23,16 +23,19 @@ namespace Chapter31_ADONETDemo
             //Task t = GetCounts();
             //DataSet xmlRead = SqlHelper.ReadXml("config.xml");
             //DataTable table = xmlRead.Tables[0];
-            //Test.Test1();
+            //Test.Test2();
             //Console.WriteLine(default(int?));
             //Color c = Color.FromArgb(50 ,135, 206, 250);
             //Console.WriteLine(c.ToString());
-            //string path = @"C:\Users\songtaojie\Downloads\总分类账_20180522_130542.xls";
-            string path = @"C:\Users\songtaojie\Downloads\总分类账_20180522_160534.xls"; 
-            XmlDocument doc = Export.LoadXml(path);
+            string path1 = @"C:\Users\songtaojie\Downloads\总分类账_20180522_130542.xls";
+            string path2 = @"C:\Users\songtaojie\Downloads\总分类账_20180522_160534.xls";
+            //XmlDocument doc = Export.LoadXml(path);
             //XmlDocument doc = Export.ExcelToXml(path);
             //Export.ConvertExcel(path);
-            Console.WriteLine(1111);
+            //XmlDocument doc = ExcelXmlHelper.ReadFileByName(path2);
+            ExcelUtils.Export(path1, path2);
+            //ExcelXmlHelper.FillData(doc);
+            Console.WriteLine("ok");
             Console.Read();
         }
         

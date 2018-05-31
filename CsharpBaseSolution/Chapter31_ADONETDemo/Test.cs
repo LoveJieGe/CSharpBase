@@ -221,7 +221,7 @@ from [dbo].[V1GetAccGLFC]('201501','201812','1','9','1','9','N','Y') TM
                     conn.Open();
                     DataTable table = ExecuteDataTable(cmd);
                     watch.Stop();
-                    Console.WriteLine("数据{0},数据库操作时间：毫秒:{1}，秒：{2}", table.Rows.Count, watch.ElapsedMilliseconds, watch.ElapsedMilliseconds / 1000);
+                    Console.WriteLine("从数据库取出数据{0}条", table.Rows.Count);
                     Stopwatch watch2 = new Stopwatch();
                     watch2.Start();
                     DataTable newTable = HandleAccYear7(table,true);
