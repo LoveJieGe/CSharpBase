@@ -131,7 +131,6 @@ namespace Chapter31_ADONETDemo
                     if (dataRows != null && dataRows.Length > 0)
                     {
                         DataRow dataRow = dataRows[0];
-                        dataRow
                     }
                 }
             }
