@@ -29,7 +29,19 @@ namespace Chapter31_ADONETDemo
                 {
                     watch.Start();
                     cmd.CommandText = string.Format(@"
-select TM.* From[dbo].[V1GetAccDetailFC]('201801','201805','1','9',1,9,'N','Y')TM
+Select AccID,AccName,CurrID,Flag,AbsID,FZAbsID,Y,M,D,VouSeriesName,DocNum,VouSeriesID,SumInfo,
+CurDebitLC,CurDebitFC,CurDebitQty,CurCreditLC,CurCreditFC,CurCreditQty,
+BQDebitLC,BQDebitFC,BQDebitQty,BQCreditLC,BQCreditFC,BQCreditQty,
+YearDebitLC,YearDebitFC,YearDebitQty,YearCreditLC,YearCreditFC,YearCreditQty,
+LastBalanceLC,LastBalanceFC,LastBalanceQty,
+BalanceDirectLC,BalanceDirectFC,BalanceDirectQty,
+BalanceAccDirectLC,BalanceAccDirectFC,BalanceAccDirectQty,
+CheckNo,CheckDate,AccDirect,DocEntry,ObjType,
+LastDirect,OpUserSign,OpUserName,CkUserSign,CkUserName,EnUserSign,EnUserName,OpDate,AccDesc2,Price,
+(Case When TM.Flag=1 Then 0
+      When TM.Flag=2 Then 1 else 0 end)as VCount
+From [dbo].[V1GetAccDetailFC]('201305','201505','1','9',1,9,'N','Y')TM
+Order by TM.AccID,TM.CurrID,TM.AbsID,TM.Flag,TM.Y,TM.M,TM.D,TM.VouSeriesID,TM.DocNum
 ");
                     cmd.Connection = conn as SqlConnection;
                     cmd.CommandTimeout = 60000;
@@ -44,7 +56,9 @@ select TM.* From[dbo].[V1GetAccDetailFC]('201801','201805','1','9',1,9,'N','Y')T
                     Console.WriteLine("数据{0},遍历操作时间：毫秒：{1}，秒：{2}", newTable.Rows.Count, watch2.ElapsedMilliseconds, watch2.ElapsedMilliseconds / 1000);
                     Stopwatch watch3 = new Stopwatch();
                     watch3.Start();
-                    string str = JsonConvert.SerializeObject(newTable);
+                    newTable = HandleNoAccYear(newTable, true);
+                    watch3.Stop();
+                    //string str = JsonConvert.SerializeObject(newTable);
                     Console.WriteLine("数据{0},序列化操作时间：毫秒：{1}，秒：{2}", newTable.Rows.Count, watch3.ElapsedMilliseconds, watch3.ElapsedMilliseconds / 1000);
 
                 }
@@ -221,10 +235,10 @@ from [dbo].[V1GetAccGLFC]('201501','201812','1','9','1','9','N','Y') TM
                     conn.Open();
                     DataTable table = ExecuteDataTable(cmd);
                     watch.Stop();
-                    Console.WriteLine("数据{0},数据库操作时间：毫秒:{1}，秒：{2}", table.Rows.Count, watch.ElapsedMilliseconds, watch.ElapsedMilliseconds / 1000);
+                    Console.WriteLine("从数据库取出数据{0}条,时间{1}", table.Rows.Count, watch.ElapsedMilliseconds);
                     Stopwatch watch2 = new Stopwatch();
                     watch2.Start();
-                    DataTable newTable = HandleAccYear7(table,true);
+                    DataTable newTable = HandleAccYear7(table,false);
                     watch2.Stop();
                     Console.WriteLine("数据{0},遍历操作时间：毫秒：{1}，秒：{2}", newTable.Rows.Count, watch2.ElapsedMilliseconds, watch2.ElapsedMilliseconds / 1000);
                 }
@@ -232,7 +246,38 @@ from [dbo].[V1GetAccGLFC]('201501','201812','1','9','1','9','N','Y') TM
             }
         }
 
-
+        private static DataTable HandleNoAccYear(DataTable dt, bool isCurrency)
+        {
+            //dt.PrimaryKey = new DataColumn[] {
+            //    dt.Columns["AccID"],
+            //    dt.Columns["Flag"],
+            //    dt.Columns["AbsID"],
+            //    dt.Columns["RowNum"]
+            //};
+            if (dt.Rows.Count > 0)
+            {
+                object flag = null;
+                for (int i = 0, len = dt.Rows.Count; i < len; i++)
+                {
+                    DataRow row = dt.Rows[i];
+                    flag = row["Flag"];
+                    if (flag != null && !Helper.AreEqual(flag.ToString(), "1"))
+                    {
+                        DataRow lastRow = null;
+                        if (i > 0)
+                        {
+                            lastRow = dt.Rows[i - 1];
+                            double lastBalanceLC = ToDouble(lastRow["LastBalanceLC"]) + ToDouble(row["BalanceDirectLC"]),
+                                lastBalanceQty = ToDouble(lastRow["LastBalanceQty"]) + ToDouble(row["BalanceDirectQty"]);
+                            row["LastBalanceLC"] = lastBalanceLC;
+                            row["LastBalanceLC"] = lastBalanceLC;
+                        }
+                    }
+                }
+                dt.AcceptChanges();
+            }
+            return dt;
+        }
         private static DataTable HandleAccYear7(DataTable dt, bool isCurrency)
         {
             DataTable newdt = dt.Clone();
@@ -271,7 +316,7 @@ from [dbo].[V1GetAccGLFC]('201501','201812','1','9','1','9','N','Y') TM
                         {
                             debitLC += ToDouble(item["YearDebitLC"]);
                             debitQty += ToDouble(item["YearDebitQty"]);
-                            creditLC +=ToDouble(item["YearCreditLC"]);
+                            creditLC += ToDouble(item["YearCreditLC"]);
                             creditQty += ToDouble(item["YearCreditQty"]);
                             if (!isCurrency)
                             {

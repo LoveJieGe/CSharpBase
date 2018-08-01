@@ -60,13 +60,13 @@ namespace Chapter31_ADONETDemo
                 var row = sheet.Rows;
                 var col = sheet.Columns;
                 string name = sheet.Name;
-
+                
                 PivotTables tables = sheet.PivotTables() as PivotTables;
                 int tableId = tables.Count;
                 Range cell = sheet.Cells;
                 int c1 = row.Count;
                 int c2 = col.Count;
-
+                object[,] dataValue = new object[100,100];
                 Range range = sheet.UsedRange;
                 int rc = range.Count;
                 Range r1 = range[1, 1] as Range;
@@ -83,6 +83,8 @@ namespace Chapter31_ADONETDemo
                 object wtext = r1.WrapText;
                 Object format = Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookNormal;//获取Excl 2007文件格式   
                 ExclApp.DisplayAlerts = false;
+                ExclApp.Visible = false;
+                ExclApp.ScreenUpdating = false;
                 ExclDoc.SaveAs(savePath, format, Nothing, Nothing, Nothing, Nothing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Nothing, Nothing, Nothing, Nothing, Nothing);//保存为Excl 2007格式   
             }
             catch (Exception ex) { }
