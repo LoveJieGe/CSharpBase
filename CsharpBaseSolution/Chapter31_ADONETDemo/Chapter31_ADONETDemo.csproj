@@ -33,12 +33,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common">
-      <HintPath>C:\AIO5Server\AgileCore\Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\MyProject\CSharp\CompanyTraining\AgileErp\lib\Common.dll</HintPath>
     </Reference>
     <Reference Include="Correct">
-      <HintPath>C:\AIO5Server\AgileReference\Correct.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\MyProject\CSharp\CompanyTraining\AgileErp\lib\Correct.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
@@ -51,7 +53,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Provider">
-      <HintPath>C:\AIO5Server\AgileSupply\Provider.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\MyProject\CSharp\CompanyTraining\AgileErp\lib\Provider.dll</HintPath>
     </Reference>
     <Reference Include="Spire.Common, Version=1.2.791.14040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
       <HintPath>..\packages\Spire.XLS.8.5.1\lib\net40\Spire.Common.dll</HintPath>

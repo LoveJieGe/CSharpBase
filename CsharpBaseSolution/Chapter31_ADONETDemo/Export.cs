@@ -1,18 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
-using System.Data.OleDb;
-using Pushsoft.Erp.Provider;
-using Pushsoft.Erp.Common;
-using Spire.Xls;
 using Microsoft.Office.Interop.Excel;
 using System.Reflection;
-using Microsoft.Office.Core;
 
 namespace Chapter31_ADONETDemo
 {
