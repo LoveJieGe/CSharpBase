@@ -39,10 +39,10 @@ namespace CourseOrderHost
         }
         static void Main(string[] args)
         {
-            StartService();
-            Console.WriteLine("服务已启动，按任意键关闭服务!");
-            Console.ReadLine();
-            StopService();
+            //StartService();
+            //Console.WriteLine("服务已启动，按任意键关闭服务!");
+            //Console.ReadLine();
+            //StopService();
 
         }
     }

@@ -257,8 +257,8 @@ namespace Common.Image
             {
                 DateTime time = DateTime.Now;
                 string filename = "" + time.Year.ToString() + time.Month.ToString() + time.Day.ToString() + time.Hour.ToString() + time.Minute.ToString() + time.Second.ToString() + time.Millisecond.ToString();
-                Image img = Bitmap.FromFile(path);
-                Image waterimg = Image.FromFile(waterpath);
+                System.Drawing.Image img = Bitmap.FromFile(path);
+                System.Drawing.Image waterimg = System.Drawing.Image.FromFile(waterpath);
                 Graphics g = Graphics.FromImage(img);
                 ArrayList loca = GetLocation(location, img, waterimg);
                 g.DrawImage(waterimg, new Rectangle(int.Parse(loca[0].ToString()), int.Parse(loca[1].ToString()), waterimg.Width, waterimg.Height));
@@ -282,7 +282,7 @@ namespace Common.Image
         /// <param name="location">水印位置</param>
         /// <param name="img">需要添加水印的图片</param>
         /// <param name="waterimg">水印图片</param>
-        private static ArrayList GetLocation(string location, Image img, Image waterimg)
+        private static ArrayList GetLocation(string location, System.Drawing.Image img, System.Drawing.Image waterimg)
         {
             ArrayList loca = new ArrayList();
             int x = 0;
@@ -357,7 +357,7 @@ namespace Common.Image
             {
                 DateTime time = DateTime.Now;
                 string filename = "" + time.Year.ToString() + time.Month.ToString() + time.Day.ToString() + time.Hour.ToString() + time.Minute.ToString() + time.Second.ToString() + time.Millisecond.ToString();
-                Image img = Bitmap.FromFile(path);
+                System.Drawing.Image img = Bitmap.FromFile(path);
                 Graphics gs = Graphics.FromImage(img);
                 ArrayList loca = GetLocation(location, img, size, letter.Length);
                 Font font = new Font("宋体", size);
@@ -385,7 +385,7 @@ namespace Common.Image
         /// <param name="img">图片对象</param>
         /// <param name="width">宽(当水印类型为文字时,传过来的就是字体的大小)</param>
         /// <param name="height">高(当水印类型为文字时,传过来的就是字符的长度)</param>
-        private static ArrayList GetLocation(string location, Image img, int width, int height)
+        private static ArrayList GetLocation(string location, System.Drawing.Image img, int width, int height)
         {
             #region
 
@@ -717,7 +717,7 @@ namespace Common.Image
         /// <param name="pSavePath">保存路径</param>
         public void GetFrames(string pPath, string pSavedPath)
         {
-            Image gif = Image.FromFile(pPath);
+            System.Drawing.Image gif = System.Drawing.Image.FromFile(pPath);
             FrameDimension fd = new FrameDimension(gif.FrameDimensionsList[0]);
             int count = gif.GetFrameCount(fd); //获取帧数(gif图片可能包含多帧，其它格式图片一般仅一帧)
             for (int i = 0; i < count; i++)    //以Jpeg格式保存各帧
