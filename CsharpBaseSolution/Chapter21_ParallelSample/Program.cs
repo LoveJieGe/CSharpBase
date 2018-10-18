@@ -21,10 +21,25 @@ namespace Chapter21_ParallelSample
             //CancellationTokenSource();
             //CancellationTokenSourceTask();
             //ThreadPoolProgram();
-            Console.WriteLine("主线程");
-            //ThreadProgram.ThreadSample();
-            ThreadProgram.StartThreadWithParameter();
+            //Console.WriteLine("主线程");
+            ////ThreadProgram.ThreadSample();
+            //ThreadProgram.StartThreadWithParameter();
+
+            Counter c = new Counter(3);
+            c.ThresholdReached += c_ThresholdReached;
+
+            Console.WriteLine("press 'a' key to increase total");
+            while (Console.ReadKey(true).KeyChar == 'a')
+            {
+                Console.WriteLine("adding one");
+                c.Add(1);
+            }
             Console.ReadKey();
+        }
+        static void c_ThresholdReached(object sender, ThresholdReachedEventArgs e)
+        {
+            Console.WriteLine("The threshold of {0} was reached at {1}.", e.Threshold, e.TimeReached);
+            // Environment.Exit(0);
         }
         static void ParallelParagram()
         {

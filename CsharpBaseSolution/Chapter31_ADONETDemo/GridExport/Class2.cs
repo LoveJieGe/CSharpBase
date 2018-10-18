@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Chapter21_ParallelSample
+namespace Chapter31_ADONETDemo
 {
-    public class Task
+    public class Class2
     {
-
     }
 }
